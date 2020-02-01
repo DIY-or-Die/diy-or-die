@@ -31,10 +31,10 @@ public class Car : MonoBehaviour, IRecepticle
         TemperatureSlider.value = Temperature / 10;
     }
 
-    public void ReceiveItem(RepairItem item)
+    public void ReceiveItem(Droppable item)
     {
-        Traction += item.TractionValue;
-        Visibility += item.VisibilityValue;
-        Temperature += item.TemperatureValue;
+        Traction += item.RepairItem.TractionValue;
+        Visibility += item.RepairItem.VisibilityValue;
+        Temperature += item.RepairItem.TemperatureValue;
     }
 }

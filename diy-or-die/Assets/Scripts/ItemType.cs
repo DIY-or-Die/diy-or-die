@@ -2,6 +2,8 @@
 
 public enum ItemType
 {
+    Junk,
+
     Tire,
     Wipers,
     Radiator,

@@ -1,5 +1,5 @@
 ﻿
 public interface IRecepticle
 {
-    void ReceiveItem(RepairItem item);
+    void ReceiveItem(Droppable item);
 }
