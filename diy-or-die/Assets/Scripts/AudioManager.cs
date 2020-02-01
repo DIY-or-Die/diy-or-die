@@ -10,7 +10,10 @@ public class AudioManager : MonoBehaviour
     EventInstance birdAmbience;
     EventInstance nightAmbience;
 
-    EventInstance carSound;
+    EventInstance carMoving;
+    EventDescription carReached;
+    PARAMETER_DESCRIPTION triggerCarReached;
+    PARAMETER_ID cID;
 
     bool NightModeOn = false;
     bool carOn = false;
@@ -21,11 +24,29 @@ public class AudioManager : MonoBehaviour
     string carHonk = "event:/SFX/Car/Car_Honk";
     string startCar = "event:/SFX/Car/Car_Start";
 
+    void Awake()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         birdAmbience = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ambience/Bird_Ambient");
         nightAmbience = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ambience/Night_Ambient");
+        //startCar= FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Start");
+
+        carMoving = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Moving");
+        carReached = FMODUnity.RuntimeManager.GetEventDescription("event:/SFX/Car/Car_Moving");
+        //if (gameObject.tag == "carInGame")
+        //{
+        //    Debug.Log("Car loaded");
+        //    carMoving.start();
+        //}
+
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Car/Car_Moving");
+        carMoving.start();
+
 
     }
 
@@ -36,11 +57,30 @@ public class AudioManager : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot(carHonk);
         }
+
+  
+
+    }
+
+    void CarInGame()
+    {
+        if(carOn)
+        {
+            Debug.Log(startCar);
+        }
+    }
+
+    void ReachedPitStop()
+    {
+        Debug.Log("Did I reach the end?");
+        carReached.getParameterDescriptionByName("Intensity", out triggerCarReached);
+        cID = triggerCarReached.id;
+        carMoving.setParameterByID(cID, 1.00f);
     }
 
     private void OnMouseDown()
     {
-
+        //Debug.Log("Night Mode");
         if(gameObject.tag == "Night_Ambience")
         {
             
@@ -61,7 +101,16 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("Starting Car");
             carOn = true;
+            //startCar.start();
             FMODUnity.RuntimeManager.PlayOneShot(startCar);
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if (gameObject.tag == "ReachedToPitStop")
+        {
+            ReachedPitStop();
         }
     }
 
