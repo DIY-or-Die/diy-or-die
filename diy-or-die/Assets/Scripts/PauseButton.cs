@@ -11,6 +11,7 @@ public class PauseButton : MonoBehaviour
 
     void Start()
     {
+        GM = FindObjectOfType<GameManager>();
         button.onClick.AddListener(HandleClick);
         // When game is currently paused, this button works as resume button
         if (GM.GameIsPaused)

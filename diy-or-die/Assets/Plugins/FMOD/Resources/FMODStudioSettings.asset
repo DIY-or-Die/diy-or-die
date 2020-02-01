@@ -15,7 +15,7 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\diy-or-die_FMOD\diy-or-die_FMOD.fspro
+  sourceProjectPath: Assets/diy-or-die_FMOD/diy-or-die_FMOD.fspro
   sourceBankPath: Assets\diy-or-die_FMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1

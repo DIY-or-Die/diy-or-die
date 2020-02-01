@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8840332757402735749
+--- !u!114 &-4512359509159756076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,16 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Bird_Ambient
   m_EditorClassIdentifier: 
-  Path: diy-or-die_FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637161070137766088
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-6777594330915588015
+  Path: event:/SFX/Ambience/Bird_Ambient
+  guid: 23f1e77b6733bd4cb7f8e509ca20fb90
+  Banks:
+  - {fileID: -871460537824753583}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29686
+--- !u!114 &-3985312378689138047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,16 +32,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Car/Car_Moving
   m_EditorClassIdentifier: 
-  Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637161070137766088
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2698449585386143978
+  Path: event:/SFX/Car/Car_Moving
+  guid: 5f0d46c3a805e24da3edd9c2c423aaca
+  Banks:
+  - {fileID: -871460537824753583}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 86424
+--- !u!114 &-3024697828861278113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,13 +60,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161603486521524
+  lastModified: 637161660247027531
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 730
+    Value: 994
   Exists: 1
---- !u!114 &-1910385049665977348
+--- !u!114 &-871460537824753583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637161603486501485
+  lastModified: 637161660247007632
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -87,18 +97,46 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2698449585386143978}
-  - {fileID: -1910385049665977348}
+  - {fileID: -3024697828861278113}
+  - {fileID: -871460537824753583}
   EditorEvents:
-  - {fileID: 6629975772537403889}
+  - {fileID: -4512359509159756076}
+  - {fileID: 3243140665816233244}
+  - {fileID: 236595615153911204}
+  - {fileID: -3985312378689138047}
+  - {fileID: 4737838218710817397}
+  - {fileID: 2385054432665839350}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1910385049665977348}
+  - {fileID: -871460537824753583}
   StringsBanks:
-  - {fileID: -2698449585386143978}
-  stringsBankWriteTime: 637161603486521524
+  - {fileID: -3024697828861278113}
+  stringsBankWriteTime: 637161660247027531
   cacheVersion: 3
---- !u!114 &2855002711422455314
+--- !u!114 &236595615153911204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Car/Car_Honk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Car/Car_Honk
+  guid: 5c803d81ab65eb43bb75cd8470ca8c14
+  Banks:
+  - {fileID: -871460537824753583}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 235
+--- !u!114 &2385054432665839350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +151,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: ddeb9a5ce8aeea4db2f54b764ff099b9
   Banks:
-  - {fileID: -8840332757402735749}
+  - {fileID: -871460537824753583}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -121,7 +159,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &6629975772537403889
+--- !u!114 &3243140665816233244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,20 +169,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
+  m_Name: event:/SFX/Car/Car_Start
   m_EditorClassIdentifier: 
-  Path: event:/Music
-  guid: ddeb9a5ce8aeea4db2f54b764ff099b9
+  Path: event:/SFX/Car/Car_Start
+  guid: 4d767936397331458b9d44bd713cb82e
   Banks:
-  - {fileID: -1910385049665977348}
-  IsStream: 0
-  Is3D: 0
+  - {fileID: -871460537824753583}
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &8686221399234790174
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10419
+--- !u!114 &4737838218710817397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,14 +191,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Night_Ambient
   m_EditorClassIdentifier: 
-  Path: diy-or-die_FMOD/Build/Desktop/Master.strings.bank
-  SubDir: 
-  lastModified: 637161070137805949
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 730
-  Exists: 1
+  Path: event:/SFX/Ambience/Night_Ambient
+  guid: 934abfcb2f1d714ca20689d3ffd53820
+  Banks:
+  - {fileID: -871460537824753583}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 233080
