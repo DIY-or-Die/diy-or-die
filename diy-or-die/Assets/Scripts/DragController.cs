@@ -7,12 +7,12 @@ public class DragController : MonoBehaviour
 
     private void Update()
     {
-        if (Target && (Input.GetMouseButtonUp(0)))
+        if (Target && Input.GetMouseButtonUp(0))
         {
             Target.IsReleased = true;
             Target = null;
         }
-        else if (Input.GetMouseButton(0))
+        else if (Target && Input.GetMouseButton(0))
         {
             Drag();
         }
