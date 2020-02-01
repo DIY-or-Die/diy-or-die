@@ -7,6 +7,8 @@ TagManager:
   - Car_Honk
   - Night_Ambience
   - StartingCar
+  - ReachedToPitStop
+  - CarInGame
   layers:
   - Default
   - TransparentFX
