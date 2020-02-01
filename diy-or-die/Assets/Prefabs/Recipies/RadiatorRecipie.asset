@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
-  m_Name: Note1
+  m_Name: RadiatorRecipie
   m_EditorClassIdentifier: 
-  description: To fix a flat tire,
+  description: To fix overheating,
   Combination:
-  - Name: Rubber
-    Count: 2
-  - Name: Metal
+  - Type: 9
     Count: 1
-  - Name: Bolt
-    Count: 2
+  - Type: 6
+    Count: 1
+  - Type: 5
+    Count: 1

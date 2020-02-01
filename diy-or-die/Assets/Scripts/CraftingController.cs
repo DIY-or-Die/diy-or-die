@@ -10,7 +10,7 @@ public partial class CraftingController : MonoBehaviour
     public Droppable[] DroppablePrefabs;
 
     private Dictionary<ItemType, Droppable> Droppables;
-    private Dictionary<ItemType, List<Dictionary<ItemType, int>>> Recipies;
+    public Dictionary<ItemType, List<Dictionary<ItemType, int>>> Recipies { get; private set; }
 
     private void Start()
     {

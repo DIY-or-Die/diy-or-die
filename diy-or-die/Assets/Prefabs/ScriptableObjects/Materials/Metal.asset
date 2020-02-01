@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2d8207bdcb74a1c8d7be38b9185efb, type: 3}
   m_Name: Metal
   m_EditorClassIdentifier: 
-  ItemType: 5
+  ItemType: 6
   TractionValue: 1
   VisibilityValue: 0
   TemperatureValue: 1
