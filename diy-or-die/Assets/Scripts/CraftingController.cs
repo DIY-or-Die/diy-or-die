@@ -33,6 +33,11 @@ public partial class CraftingController : MonoBehaviour
 
     public void Craft()
     {
+        if (Slots.Any(s => s.Item == null))
+        {
+            return;
+        }
+
         Droppable product = null;
         Dictionary<ItemType, int> items = CreateRecipie(Slots);
         RecipieComparer recipieComparer = new RecipieComparer();
