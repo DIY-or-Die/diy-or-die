@@ -52,5 +52,10 @@ public partial class CraftingController : MonoBehaviour
         {
             product = Instantiate(Droppables[ItemType.Junk]);
         }
+
+        foreach (CraftingSlot slot in Slots)
+        {
+            slot.EmptySlot();
+        }
     }
 }

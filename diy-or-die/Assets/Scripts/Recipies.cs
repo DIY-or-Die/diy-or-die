@@ -56,7 +56,7 @@ public class RecipieComparer : IEqualityComparer<Dictionary<ItemType, int>>
     {
         foreach (KeyValuePair<ItemType, int> kvp in recipie)
         {
-            if (items[kvp.Key] < kvp.Value)
+            if (!items.ContainsKey(kvp.Key) || items[kvp.Key] < kvp.Value)
             {
                 return false;
             }
