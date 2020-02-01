@@ -1,22 +1,20 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(RepairItem))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Collider2D))]
 public class Droppable : MonoBehaviour
 {
-    public RepairItem RepairItem { get; private set; }
     public SpriteRenderer Renderer { get; private set; }
     public Collider2D DragCollider { get; private set; }
     public DragController DragController { get; private set; }
 
     public bool IsDragging { get; set; }
-    public bool IsReleased { get; set; }
+
+    public RepairItem RepairItem;
 
     private void Start()
     {
-        RepairItem = GetComponent<RepairItem>();
         Renderer = GetComponent<SpriteRenderer>();
         DragCollider = GetComponent<Collider2D>();
         DragController = FindObjectOfType<DragController>();
@@ -25,11 +23,18 @@ public class Droppable : MonoBehaviour
     private void OnMouseDown()
     {
         IsDragging = true;
-        DragController.Target = this;
+        DragController.SelectedItem = this;
     }
 
     public void Drop()
     {
-
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100, LayerMask.GetMask("Recepticle")))
+        {
+            Debug.Log("Received Item");
+            IRecepticle recepticle = hit.collider.GetComponent<IRecepticle>();
+            recepticle.ReceiveItem(RepairItem);
+        }
     }
 }

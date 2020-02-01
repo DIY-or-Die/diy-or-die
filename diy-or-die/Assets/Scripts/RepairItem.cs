@@ -1,8 +1,11 @@
 ﻿using System;
 using UnityEngine;
 
-public class RepairItem : MonoBehaviour
+[CreateAssetMenu()]
+public class RepairItem : ScriptableObject
 {
     public ItemType ItemType;
-    public Consumable Consumable { get; set; }
+    public float TractionValue;
+    public float VisibilityValue;
+    public float TemperatureValue;
 }

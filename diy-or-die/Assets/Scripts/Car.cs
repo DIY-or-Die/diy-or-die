@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Car : MonoBehaviour
+public class Car : MonoBehaviour, IRecepticle
 {
     public Slider TractionSlider;
     public Slider VisibilitySlider;
@@ -31,7 +31,7 @@ public class Car : MonoBehaviour
         TemperatureSlider.value = Temperature / 10;
     }
 
-    public void ConsumeItem(Consumable item)
+    public void ReceiveItem(RepairItem item)
     {
         Traction += item.TractionValue;
         Visibility += item.VisibilityValue;
