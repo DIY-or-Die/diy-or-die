@@ -32,7 +32,6 @@ public class Droppable : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 100, LayerMask.GetMask("Recepticle")))
         {
-            Debug.Log("Received Item");
             IRecepticle recepticle = hit.collider.GetComponent<IRecepticle>();
             recepticle.ReceiveItem(RepairItem);
         }
