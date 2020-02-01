@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2d8207bdcb74a1c8d7be38b9185efb, type: 3}
-  m_Name: Rubber
+  m_Name: Bolts
   m_EditorClassIdentifier: 
-  ItemType: 3
-  TractionValue: 0
+  ItemType: 6
+  TractionValue: 2
   VisibilityValue: 0
   TemperatureValue: 0
