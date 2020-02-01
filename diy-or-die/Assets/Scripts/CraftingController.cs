@@ -55,6 +55,7 @@ public partial class CraftingController : MonoBehaviour
 
         foreach (CraftingSlot slot in Slots)
         {
+            Destroy(slot.Item.gameObject);
             slot.EmptySlot();
         }
     }
