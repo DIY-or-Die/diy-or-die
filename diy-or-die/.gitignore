@@ -26,6 +26,7 @@
 .gradle/
 
 # FMOD
+./Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
 ./Assets/FMODStudioCache.asset
 ./Assets/FMODStudioCache.asset.meta
 fmod.log

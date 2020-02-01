@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     EventInstance carSound;
 
     bool NightModeOn = false;
+    bool carOn = false;
     //Ambient Sounds
 
 
@@ -56,9 +57,10 @@ public class AudioManager : MonoBehaviour
                 //nightAmbience.setPaused(false);
             }
         }
-        if(gameObject.tag == "StartingCar")
+        if(gameObject.tag == "StartingCar" && carOn == false)
         {
             Debug.Log("Starting Car");
+            carOn = true;
             FMODUnity.RuntimeManager.PlayOneShot(startCar);
         }
     }
