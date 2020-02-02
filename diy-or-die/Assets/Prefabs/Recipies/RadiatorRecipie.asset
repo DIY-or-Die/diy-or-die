@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
   m_Name: RadiatorRecipie
   m_EditorClassIdentifier: 
-  ItemType: 3
-  description: To fix overheating,
+  ItemType: 4
+  description: To fix temperature,
   Combination:
-  - Type: 9
+  - Type: 8
     Count: 1
-  - Type: 6
+  - Type: 10
     Count: 1
-  - Type: 5
+  - Type: 11
     Count: 1

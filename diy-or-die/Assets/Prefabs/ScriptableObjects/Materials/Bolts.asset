@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bolts
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: e6a425857bafd430cb5af4a711ce5351, type: 3}
-  ItemType: 7
+  ItemType: 12
   TractionValue: 2
   VisibilityValue: 0
   TemperatureValue: 0

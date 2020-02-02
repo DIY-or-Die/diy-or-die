@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Metal
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 6b75d3f8828604d47bf960d7fb8aaab3, type: 3}
-  ItemType: 6
+  ItemType: 11
   TractionValue: 1
   VisibilityValue: 0
   TemperatureValue: 1

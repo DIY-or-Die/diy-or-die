@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2d8207bdcb74a1c8d7be38b9185efb, type: 3}
-  m_Name: Rubber
+  m_Name: Grill
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 2076180acf659422e9621001aa15ca34, type: 3}
-  ItemType: 9
-  TractionValue: 1
-  VisibilityValue: 1
+  Sprite: {fileID: 0}
+  ItemType: 5
+  TractionValue: 0
+  VisibilityValue: 0
   TemperatureValue: 0
