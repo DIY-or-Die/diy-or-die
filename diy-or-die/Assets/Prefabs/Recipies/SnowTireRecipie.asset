@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemType: 0
   description: To fix traction,
+  HealingPartImage: {fileID: 21300000, guid: 0150ec85e6ed35b45bc3c1ab6ee2dab5, type: 3}
   Combination:
   - Type: 6
     Count: 1

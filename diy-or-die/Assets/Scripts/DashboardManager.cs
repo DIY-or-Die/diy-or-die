@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DashboardManager : MonoBehaviour
 {
-    public GameObject PrefabStickyNoteContent;
     public Animator animator;
 
     // Start is called before the first frame update

@@ -7,16 +7,18 @@ public class StickyNoteUI : MonoBehaviour
 {
     public StickyNote Note;
     public Text DescText;
+    public Image PartImage;
     public Transform ContentHolder;
     
     // Start is called before the first frame update
     void Start()
     {
-        DashboardManager manager = FindObjectOfType<DashboardManager>(); 
+        StickyNoteManager manager = FindObjectOfType<StickyNoteManager>(); 
 
         if (Note)
         {
             DescText.text = Note.description;
+            PartImage.sprite = Note.HealingPartImage;
             foreach (StickyNoteContent mat in Note.Combination)
             {
                 GameObject obj = Instantiate(manager.PrefabStickyNoteContent, ContentHolder);
