@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fluid
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: fd007a232ded140f28ca4d2a42f012cd, type: 3}
-  ItemType: 5
+  ItemType: 10
   TractionValue: 0
   VisibilityValue: 1
   TemperatureValue: 1

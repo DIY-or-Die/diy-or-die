@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
   m_Name: TireRecipie
   m_EditorClassIdentifier: 
-  ItemType: 1
+  ItemType: 6
   description: To fix traction,
   Combination:
-  - Type: 4
+  - Type: 9
     Count: 1
-  - Type: 6
+  - Type: 11
     Count: 1
-  - Type: 7
+  - Type: 12
     Count: 1

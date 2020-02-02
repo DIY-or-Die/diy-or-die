@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public bool GameIsFinished = false;
     public float WinTimer = 100.0f; // seconds 
+    public float WinTimeElapsed = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +21,14 @@ public class GameManager : MonoBehaviour
     {
         if (!GameIsFinished)
         {
-            if (WinTimer > 0.0f)
+            if (WinTimer > WinTimeElapsed)
             {
-                WinTimer -= Time.deltaTime;
+                WinTimeElapsed += Time.deltaTime;
             }
             else
             {
                 // Win!
+                WinTimeElapsed = 0.0f;
                 GameIsFinished = true;
             }
         }
