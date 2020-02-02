@@ -15,8 +15,7 @@ public class Sign : MonoBehaviour
     {
         GM = FindObjectOfType<GameManager>();
         SignUI.SetActive(false);
-        AnimationAvailable = true;
-        StartCoroutine("UpdateSign");
+        AnimationAvailable = true;     
     }
 
     void Update()
