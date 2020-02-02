@@ -61,10 +61,22 @@ MonoBehaviour:
   - {fileID: 4955698102668315957, guid: 85c85960177c1c14988ca2fc0394910f, type: 3}
   - {fileID: 4955698102668315957, guid: 7615bdcd9c867024392ea4c1d71449ce, type: 3}
   - {fileID: 4955698102668315957, guid: a5a5159a4ff669e4b9470670bfbb93bf, type: 3}
+  - {fileID: 4955698102668315957, guid: b9e202a0013d4054d9788c169ef96275, type: 3}
+  - {fileID: 4955698102668315957, guid: a196735e895e4d94cac5c292f85cbe3c, type: 3}
+  - {fileID: 4955698102668315957, guid: 91358eb1d1da4cf49bd2fd247a95d5ed, type: 3}
+  - {fileID: 4955698102668315957, guid: 9ec43a2b659aef5468c7f9de5b707d1a, type: 3}
+  - {fileID: 4955698102668315957, guid: 1a84e07b4804e8b4bb479d636957d1d3, type: 3}
+  - {fileID: 4955698102668315957, guid: b12afc7d550c266479c4973646185f1e, type: 3}
   StickyNotes:
   - {fileID: 11400000, guid: 8795254bb6d1e3d42b7f4e1994f6af70, type: 2}
   - {fileID: 11400000, guid: 92b5df2193adfb14699360a77b73df46, type: 2}
   - {fileID: 11400000, guid: 82ed53a58199c3e49b27b3453475abc2, type: 2}
+  - {fileID: 11400000, guid: c9123f391a27bfa438cdc6f342d19837, type: 2}
+  - {fileID: 11400000, guid: 31d1b4c23012055468053e182a685e75, type: 2}
+  - {fileID: 11400000, guid: a3126c870f77fff41b903a5e340f95ed, type: 2}
+  - {fileID: 11400000, guid: 5e6d69504e106cb429066044605ce7a5, type: 2}
+  - {fileID: 11400000, guid: 366f2cdb52fa2d147b2f896e58d33f6d, type: 2}
+  - {fileID: 11400000, guid: de5fae06e3c39a940b340a223a9355fa, type: 2}
 --- !u!1001 &3131129716105076759
 PrefabInstance:
   m_ObjectHideFlags: 0
