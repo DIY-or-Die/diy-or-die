@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Car : MonoBehaviour, IRecepticle
+public class Car : MonoBehaviour
 {
     public Slider CarHealthSlider;
     public Slider TractionSlider;
@@ -25,10 +25,10 @@ public class Car : MonoBehaviour, IRecepticle
 
     private void Update()
     {
-        CarHealth = ModifyHealth(CarHealth, CarHealthSlider, -Time.deltaTime * 10);
-        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime);
-        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime);
-        Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime);
+        CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
+        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime * 0.1f);
+        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime * 0.1f);
+        Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime * 0.1f);
     }
 
     // Changes the slider by the specified amount
@@ -43,10 +43,23 @@ public class Car : MonoBehaviour, IRecepticle
         return currentHealth;
     }
 
-    public void ReceiveItem(Droppable item)
+    private float CalculateCarHealthLost()
     {
-        Traction += item.RepairItem.TractionValue;
-        Visibility += item.RepairItem.VisibilityValue;
-        Temperature += item.RepairItem.TemperatureValue;
+        float numBrokenParts = 0;
+        if (Traction <= 0)
+        {
+            numBrokenParts++;
+        }
+        if (Visibility <= 0)
+        {
+            numBrokenParts++;
+
+        }
+        if (Temperature <= 0)
+        {
+            numBrokenParts++;
+        }
+
+        return -Time.deltaTime * (.10f + numBrokenParts);
     }
 }

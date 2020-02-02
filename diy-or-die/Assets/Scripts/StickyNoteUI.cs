@@ -13,6 +13,7 @@ public class StickyNoteUI : MonoBehaviour
     void Start()
     {
         DashboardManager manager = FindObjectOfType<DashboardManager>(); 
+
         if (Note)
         {
             DescText.text = Note.description;
