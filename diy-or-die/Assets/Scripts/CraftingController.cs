@@ -52,7 +52,10 @@ public partial class CraftingController : MonoBehaviour
                 if (recipieComparer.Equals(recipie, items))
                 {
                     product = Instantiate(Droppables[recipieList.Key]);
-                    eventManager.RaiseOnCrafted(recipieList.Key);
+                    if (eventManager != null)
+                    {
+                        eventManager.RaiseOnCrafted(recipieList.Key);
+                    }
                 }
             }
         }
