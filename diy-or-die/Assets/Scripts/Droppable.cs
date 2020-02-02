@@ -18,6 +18,8 @@ public class Droppable : MonoBehaviour
         Renderer = GetComponent<SpriteRenderer>();
         DragCollider = GetComponent<Collider2D>();
         DragController = FindObjectOfType<DragController>();
+
+        Renderer.sprite = RepairItem.Sprite;
     }
 
     private void OnMouseDown()
