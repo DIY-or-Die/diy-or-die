@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Tire
   m_EditorClassIdentifier: 
   IsMaterial: 0
+  HealthType: 1
+  HealthValue: 1
   Sprite: {fileID: 21300000, guid: d3743f0b4f9d9194d81b536ec5350d86, type: 3}
   ItemType: 6
   TractionValue: 0

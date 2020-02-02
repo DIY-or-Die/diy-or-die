@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4955698102668315952}
   - component: {fileID: 4955698102668315957}
   m_Layer: 0
-  m_Name: Radiator
+  m_Name: Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: 43b06f2034df0064fb8524c089d18eab, type: 2}
+  PartHealth: 10

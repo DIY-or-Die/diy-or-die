@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Grill
   m_EditorClassIdentifier: 
   IsMaterial: 0
+  HealthType: 3
+  HealthValue: 3
   Sprite: {fileID: 21300000, guid: 43cbd271895e10d4681dc2157e6808e2, type: 3}
   ItemType: 5
   TractionValue: 0

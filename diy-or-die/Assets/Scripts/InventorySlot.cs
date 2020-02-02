@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CraftingSlot : MonoBehaviour, IRecepticle
+public class InventorySlot : MonoBehaviour, IRecepticle
 {
     public Droppable Item { get; set; }
     public bool UsesPart { get; private set; }

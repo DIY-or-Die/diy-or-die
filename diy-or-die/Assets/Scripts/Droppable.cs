@@ -26,6 +26,7 @@ public class Droppable : MonoBehaviour
     }
     public IRecepticle Recepticle { get; set; }
     public RepairItem RepairItem;
+    public float PartHealth;
 
     private float IdleTimer = 10;
 
@@ -40,6 +41,11 @@ public class Droppable : MonoBehaviour
 
     private void Update()
     {
+        if (Recepticle != null && Recepticle.UsesPart)
+        {
+            PartHealth -= Time.deltaTime;
+        }
+
         if (IsDragging || Recepticle != null)
         {
             IdleTimer = 10;
@@ -52,6 +58,7 @@ public class Droppable : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+        Renderer.color = new Color(1, 1, 1, IdleTimer / 10);
     }
 
     private void OnMouseDown()
