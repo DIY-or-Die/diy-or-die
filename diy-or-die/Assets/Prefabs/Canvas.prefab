@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c744426ebb4817b48a1413a369f3bfcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Note: {fileID: 11400000, guid: 8795254bb6d1e3d42b7f4e1994f6af70, type: 2}
+  Note: {fileID: 0}
   DescText: {fileID: 5642489591060721370}
   ContentHolder: {fileID: 4630674045612959470}
 --- !u!1 &328074587563358399
@@ -1193,7 +1193,7 @@ RectTransform:
   m_GameObject: {fileID: 2629074044599294746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.882353, y: 1.882353, z: 1.882353}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 715571364709250393}
   - {fileID: 6090256402124690500}
@@ -1202,8 +1202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.04711914}
-  m_SizeDelta: {x: -375.00006, y: -381.12653}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8233101717450067389
 CanvasRenderer:
@@ -1755,7 +1755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c744426ebb4817b48a1413a369f3bfcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Note: {fileID: 11400000, guid: 92b5df2193adfb14699360a77b73df46, type: 2}
+  Note: {fileID: 0}
   DescText: {fileID: 5457215920209570943}
   ContentHolder: {fileID: 2392847815126784869}
 --- !u!1 &3658079773635524884
@@ -3336,7 +3336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c744426ebb4817b48a1413a369f3bfcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Note: {fileID: 11400000, guid: 82ed53a58199c3e49b27b3453475abc2, type: 2}
+  Note: {fileID: 0}
   DescText: {fileID: 6747454298865272442}
   ContentHolder: {fileID: 2723375904137585377}
 --- !u!1 &8862598157776914559
