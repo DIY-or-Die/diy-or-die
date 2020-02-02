@@ -52,6 +52,7 @@ public class Droppable : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+        Renderer.color = new Color(1, 1, 1, IdleTimer / 10);
     }
 
     private void OnMouseDown()
