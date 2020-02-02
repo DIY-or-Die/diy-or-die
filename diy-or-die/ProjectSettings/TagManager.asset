@@ -48,6 +48,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Material
+    uniqueID: 4076781925
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

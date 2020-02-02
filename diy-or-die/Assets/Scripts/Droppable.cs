@@ -25,8 +25,9 @@ public class Droppable : MonoBehaviour
         }
     }
     public IRecepticle Recepticle { get; set; }
-
     public RepairItem RepairItem;
+
+    private float IdleTimer = 10;
 
     private void Start()
     {
@@ -35,6 +36,22 @@ public class Droppable : MonoBehaviour
         DragController = FindObjectOfType<DragController>();
 
         Renderer.sprite = RepairItem.Sprite;
+    }
+
+    private void Update()
+    {
+        if (IsDragging || Recepticle != null)
+        {
+            IdleTimer = 10;
+        }
+        else
+        {
+            IdleTimer -= Time.deltaTime;
+            if (IdleTimer <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
     }
 
     private void OnMouseDown()
