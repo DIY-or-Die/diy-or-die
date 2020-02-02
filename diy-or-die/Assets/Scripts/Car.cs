@@ -25,9 +25,9 @@ public class Car : MonoBehaviour, IRecepticle
 
     private void Update()
     {
-        CarHealth = ModifyHealth(CarHealth, CarHealthSlider, -Time.deltaTime * 10);
-        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime);
-        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime);
+        CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
+        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime * 3);
+        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime * 2);
         Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime);
     }
 
@@ -41,6 +41,26 @@ public class Car : MonoBehaviour, IRecepticle
         slider.value = currentHealth / 10;
 
         return currentHealth;
+    }
+
+    private float CalculateCarHealthLost()
+    {
+        float numBrokenParts = 0;
+        if (Traction <= 0)
+        {
+            numBrokenParts++;
+        }
+        if (Visibility <= 0)
+        {
+            numBrokenParts++;
+
+        }
+        if (Temperature <= 0)
+        {
+            numBrokenParts++;
+        }
+
+        return -Time.deltaTime * (.25f + numBrokenParts);
     }
 
     public void ReceiveItem(Droppable item)
