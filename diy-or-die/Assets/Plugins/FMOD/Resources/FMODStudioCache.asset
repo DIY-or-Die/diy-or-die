@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8838182650530791754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,6 +42,8 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 1
+=======
+>>>>>>> 8da4c11825dd749c77432cbc1f16a1d2a0588067
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,6 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   EditorBanks:
   - {fileID: 1025830710716299740}
   - {fileID: 5743247807596770279}
@@ -241,3 +245,12 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 235
+=======
+  EditorBanks: []
+  EditorEvents: []
+  EditorParameters: []
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
+  cacheVersion: 3
+>>>>>>> 8da4c11825dd749c77432cbc1f16a1d2a0588067
