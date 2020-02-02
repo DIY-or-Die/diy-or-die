@@ -20,5 +20,9 @@ public enum ItemType
     Plastic,
     Spring,
 
-    Junk
+    Junk,
+
+    Shield,
+    FluxCapacitator,
+    SpaceGun
 }
