@@ -9,6 +9,11 @@ TagManager:
   - StartingCar
   - ReachedToPitStop
   - CarInGame
+  - inGameCar
+  - Music
+  - 75HealthMusic
+  - 50HealthMusic
+  - 25HealthMusic
   layers:
   - Default
   - TransparentFX

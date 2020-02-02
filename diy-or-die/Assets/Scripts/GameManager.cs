@@ -5,6 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool GameIsPaused = false;
+
+    public bool GameIsFinished = false;
+    public float WinTimer = 100.0f; // seconds 
+    public float WinTimeElapsed = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,16 +19,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!GameIsFinished)
+        {
+            if (WinTimer > WinTimeElapsed)
+            {
+                WinTimeElapsed += Time.deltaTime;
+            }
+            else
+            {
+                // Win!
+                WinTimeElapsed = 0.0f;
+                GameIsFinished = true;
+            }
+        }
     }
 
     public void QuitGame()
     {                          
         Application.Quit();
     }
-
-
-
+                                                     
     public void Pause()
     {
         Time.timeScale = 0.0f;
