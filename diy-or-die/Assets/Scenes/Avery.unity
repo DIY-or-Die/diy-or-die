@@ -875,19 +875,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: 7615bdcd9c867024392ea4c1d71449ce,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 401192416}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7615bdcd9c867024392ea4c1d71449ce, type: 3}
---- !u!212 &401192416 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2764824517196207470, guid: 7615bdcd9c867024392ea4c1d71449ce,
-    type: 3}
-  m_PrefabInstance: {fileID: 401192415}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &466269493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1186,19 +1175,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: f426998c95b0a8947a51b911850a7f50,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 511034361}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f426998c95b0a8947a51b911850a7f50, type: 3}
---- !u!212 &511034361 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5246809122192455829, guid: f426998c95b0a8947a51b911850a7f50,
-    type: 3}
-  m_PrefabInstance: {fileID: 511034360}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &602798269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,19 +1540,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: a196735e895e4d94cac5c292f85cbe3c,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 745396601}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a196735e895e4d94cac5c292f85cbe3c, type: 3}
---- !u!212 &745396601 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4324322260521898006, guid: a196735e895e4d94cac5c292f85cbe3c,
-    type: 3}
-  m_PrefabInstance: {fileID: 745396600}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &803835801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1627,34 +1594,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 1a84e07b4804e8b4bb479d636957d1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 1a84e07b4804e8b4bb479d636957d1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 1a84e07b4804e8b4bb479d636957d1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: 1a84e07b4804e8b4bb479d636957d1d3,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 803835802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a84e07b4804e8b4bb479d636957d1d3, type: 3}
---- !u!212 &803835802 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6824609348518555237, guid: 1a84e07b4804e8b4bb479d636957d1d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 803835801}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &806181222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,19 +1755,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: 9ec43a2b659aef5468c7f9de5b707d1a,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 946593673}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec43a2b659aef5468c7f9de5b707d1a, type: 3}
---- !u!212 &946593673 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6482677814435954347, guid: 9ec43a2b659aef5468c7f9de5b707d1a,
-    type: 3}
-  m_PrefabInstance: {fileID: 946593672}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &988322785 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8642441571399975607, guid: ea0d9e687b270284fa1f2ddbdd37f323,
@@ -2051,34 +1981,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 91358eb1d1da4cf49bd2fd247a95d5ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 91358eb1d1da4cf49bd2fd247a95d5ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 91358eb1d1da4cf49bd2fd247a95d5ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: 91358eb1d1da4cf49bd2fd247a95d5ed,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 1193489268}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91358eb1d1da4cf49bd2fd247a95d5ed, type: 3}
---- !u!212 &1193489268 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 8085624607826277525, guid: 91358eb1d1da4cf49bd2fd247a95d5ed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1193489267}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1212558760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2146,19 +2050,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: b12afc7d550c266479c4973646185f1e,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 1212558761}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12afc7d550c266479c4973646185f1e, type: 3}
---- !u!212 &1212558761 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1512808267364850899, guid: b12afc7d550c266479c4973646185f1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1212558760}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1381529784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,19 +2683,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: b9e202a0013d4054d9788c169ef96275,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 2038233781}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9e202a0013d4054d9788c169ef96275, type: 3}
---- !u!212 &2038233781 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 276754613675775895, guid: b9e202a0013d4054d9788c169ef96275,
-    type: 3}
-  m_PrefabInstance: {fileID: 2038233780}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2044246843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,34 +2737,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 85c85960177c1c14988ca2fc0394910f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 85c85960177c1c14988ca2fc0394910f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315954, guid: 85c85960177c1c14988ca2fc0394910f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955698102668315957, guid: 85c85960177c1c14988ca2fc0394910f,
-        type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 2044246844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c85960177c1c14988ca2fc0394910f, type: 3}
---- !u!212 &2044246844 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 8874450865795067877, guid: 85c85960177c1c14988ca2fc0394910f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2044246843}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2133760591
 GameObject:
   m_ObjectHideFlags: 0

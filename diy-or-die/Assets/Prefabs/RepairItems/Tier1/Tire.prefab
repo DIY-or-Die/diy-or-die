@@ -204,5 +204,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: b2acbd938dbf6f349bd1f75cabbaadd8, type: 2}
-  Glow: {fileID: 0}
-  PartHealth: 10
+  Glow: {fileID: 8874450865795067877}
+  PartHealth: 15
