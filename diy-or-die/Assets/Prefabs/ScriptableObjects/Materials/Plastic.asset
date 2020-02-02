@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Plastic
   m_EditorClassIdentifier: 
   IsMaterial: 1
+  HealthType: 0
+  HealthValue: 0
   Sprite: {fileID: 21300000, guid: b2cf546e8498d4323b066ec590297a38, type: 3}
   ItemType: 13
-  TractionValue: 0
-  VisibilityValue: 2
-  TemperatureValue: 0
+  TractionValue: 1
+  VisibilityValue: 0
+  TemperatureValue: 1

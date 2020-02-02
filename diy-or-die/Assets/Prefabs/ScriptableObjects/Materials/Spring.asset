@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Spring
   m_EditorClassIdentifier: 
   IsMaterial: 1
+  HealthType: 0
+  HealthValue: 0
   Sprite: {fileID: 21300000, guid: 660df52047d2942ce9b5498dbc6dce4a, type: 3}
   ItemType: 14
-  TractionValue: 0
-  VisibilityValue: 0
-  TemperatureValue: 2
+  TractionValue: 1
+  VisibilityValue: 1
+  TemperatureValue: 0

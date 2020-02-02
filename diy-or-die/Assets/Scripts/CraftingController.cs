@@ -26,14 +26,6 @@ public partial class CraftingController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Craft();
-        }
-    }
-
     public void Craft()
     {
         if (Slots.Any(s => s.Item == null))

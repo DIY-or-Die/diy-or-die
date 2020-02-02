@@ -655,6 +655,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1502900101}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &988322785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8642441571399975607, guid: ea0d9e687b270284fa1f2ddbdd37f323,
+    type: 3}
+  m_PrefabInstance: {fileID: 8642441570546349014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e1829a0af8e0441a13ff2f294ed79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1040894271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2521531730942243298, guid: c4d24083e42637b49a74e422b49f469d,
@@ -1628,6 +1640,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 823314839091224967, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 823314839091224967, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541556984338230122, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 988322785}
+    - target: {fileID: 1541556984338230122, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Craft
+      objectReference: {fileID: 0}
     - target: {fileID: 1808872937452807945, guid: c4d24083e42637b49a74e422b49f469d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1697,6 +1729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869214644762685556, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 3407409773348874880, guid: c4d24083e42637b49a74e422b49f469d,
         type: 3}
@@ -2068,6 +2105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlaneDistance
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862598159368343493, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8862598159442056755, guid: c4d24083e42637b49a74e422b49f469d,
         type: 3}
