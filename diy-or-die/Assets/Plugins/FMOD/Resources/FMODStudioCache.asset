@@ -32,15 +32,32 @@ MonoBehaviour:
   Path: event:/Music/Music
   guid: ddeb9a5ce8aeea4db2f54b764ff099b9
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6978076048097740611}
+  - {fileID: -6664809144644050683}
   MinDistance: 0
   MaxDistance: 0
   Length: 123324
+--- !u!114 &-6664809144644050683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-5710627802303772080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,7 +91,7 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Start
   guid: 4d767936397331458b9d44bd713cb82e
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -82,6 +99,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10419
+--- !u!114 &-1810756487201846773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161797040000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1156634264186604060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,12 +132,12 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Moving
   guid: 5f0d46c3a805e24da3edd9c2c423aaca
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3082979966950419907}
+  - {fileID: 7301591575266766817}
   MinDistance: 1
   MaxDistance: 20
   Length: 92961
@@ -121,7 +156,7 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Honk
   guid: 5c803d81ab65eb43bb75cd8470ca8c14
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -143,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 7085725098193145537}
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   EditorEvents:
   - {fileID: 7891467469957903810}
   - {fileID: -2549302133183867011}
@@ -153,10 +188,10 @@ MonoBehaviour:
   - {fileID: -6838555500302545394}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   StringsBanks:
   - {fileID: 7085725098193145537}
-  stringsBankWriteTime: 637161817577676818
+  stringsBankWriteTime: 637161797040000000
   cacheVersion: 3
 --- !u!114 &3082979966950419907
 MonoBehaviour:
@@ -189,11 +224,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161817577676818
+  lastModified: 637161797040000000
   LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1100
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7301591575266766817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Car_Moving/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &7891467469957903810
 MonoBehaviour:
@@ -210,7 +260,7 @@ MonoBehaviour:
   Path: event:/Music/Ambience/Bird_Ambient
   guid: 23f1e77b6733bd4cb7f8e509ca20fb90
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -233,7 +283,7 @@ MonoBehaviour:
   Path: event:/Music/Ambience/Night_Ambient
   guid: 934abfcb2f1d714ca20689d3ffd53820
   Banks:
-  - {fileID: -5710627802303772080}
+  - {fileID: -1810756487201846773}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
