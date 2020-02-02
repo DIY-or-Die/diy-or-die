@@ -26,6 +26,8 @@ public class Droppable : MonoBehaviour
     }
     public IRecepticle Recepticle { get; set; }
     public RepairItem RepairItem;
+
+    public float OriginalPartHealth { get; set; }
     public float PartHealth;
 
     private float IdleTimer = 10;
@@ -37,6 +39,7 @@ public class Droppable : MonoBehaviour
         DragController = FindObjectOfType<DragController>();
 
         Renderer.sprite = RepairItem.Sprite;
+        OriginalPartHealth = PartHealth;
     }
 
     private void Update()
@@ -44,21 +47,35 @@ public class Droppable : MonoBehaviour
         if (Recepticle != null && Recepticle.UsesPart)
         {
             PartHealth -= Time.deltaTime;
+            if (PartHealth < 0)
+            {
+                Destroy(gameObject);
+            }
         }
+        else { 
+}
 
         if (IsDragging || Recepticle != null)
         {
             IdleTimer = 10;
+            Renderer.color = new Color(1, 1, 1, 1);
         }
         else
         {
             IdleTimer -= Time.deltaTime;
+            Renderer.color = new Color(1, 1, 1, IdleTimer / 10);
             if (IdleTimer <= 0)
             {
-                Destroy(this.gameObject);
+                Destroy(gameObject);
+            }
+
+            if (transform.position.y > -2)
+            {
+                transform.Translate(new Vector3(0, -.8f * Time.deltaTime));
             }
         }
-        Renderer.color = new Color(1, 1, 1, IdleTimer / 10);
+        float healthVal = OriginalPartHealth == 0 ? 1 : PartHealth / OriginalPartHealth;
+        Renderer.color = new Color(1, healthVal, healthVal, IdleTimer / 10);
     }
 
     private void OnMouseDown()

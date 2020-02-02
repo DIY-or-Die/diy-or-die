@@ -25,12 +25,88 @@ public class Car : MonoBehaviour
 
     public Slider TemperatureSlider;
 
-    public float CarHealth { get; set; }
-    public float Traction { get; set; }
-    public float Visibility { get; set; }
-    public float Temperature { get; set; }
+    private float _carHealth;
+    public float CarHealth
+    {
+        get
+        {
+            return _carHealth;
+        }
+        set
+        {
+            _carHealth = value;
+            if (_carHealth < 0)
+            {
+                _carHealth = 0;
+            }
+            else if (_carHealth > 10)
+            {
+                _carHealth = 10;
+            }
+        }
+    }
+    private float _traction;
+    public float Traction
+    {
+        get
+        {
+            return _traction;
+        }
+set
+        {
+            _traction = value;
+            if (_traction < 0)
+            {
+                _traction = 0;
+            }
+            else if (_traction > 10)
+            {
+                _traction = 10;
+            }
+        }
+    }
+    private float _visibility;
+    public float Visibility
+    {
+        get
+        {
+            return _visibility;
+        }
+        set
+        {
+            _visibility = value;
+            if (_visibility < 0)
+            {
+                _visibility = 0;
+            }
+            else if (_visibility > 10)
+            {
+                _visibility = 10;
+            }
+        }
+    }
+    private float _temperature;
+    public float Temperature
+{
+    get
+    {
+        return _temperature;
+    }
+    set
+    {
+            _temperature = value;
+        if (_temperature < 0)
+        {
+                _temperature = 0;
+        }
+        else if (_temperature > 10)
+        {
+                _temperature = 10;
+        }
+    }
+}
 
-    private void Start()
+private void Start()
     {
         CarHealth = 10;
         Traction = 10;
@@ -41,9 +117,9 @@ public class Car : MonoBehaviour
     private void Update()
     {
         CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
-        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime * 0.1f);
-        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime * 0.1f);
-        Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime * 0.1f);
+        Traction = ModifyHealth(Traction, TractionSlider, CalculateHealthTypeLost(HealthType.Traction, Traction));
+        Visibility = ModifyHealth(Visibility, VisibilitySlider, CalculateHealthTypeLost(HealthType.Visibility, Visibility));
+        Temperature = ModifyHealth(Temperature, TemperatureSlider, CalculateHealthTypeLost(HealthType.Temperature, Temperature));
     }
 
     // Changes the slider by the specified amount
@@ -58,15 +134,15 @@ public class Car : MonoBehaviour
         return currentHealth;
     }
 
-    private float CalculateHealthTypeLost(HealthType healthType)
+    private float CalculateHealthTypeLost(HealthType healthType, float value)
     {
         PartHub hub = Hubs.First(h => h.HealthType == healthType);
 
         if (!hub.Item)
         {
-            return -.1f * Time.deltaTime;
+            return (-.25f - .025f * value) * Time.deltaTime;
         }
-        return .1f * hub.Item.RepairItem.HealthValue * Time.deltaTime;
+        return (.25f + .025f * (10 - value)) * hub.Item.RepairItem.HealthValue * Time.deltaTime;
     }
 
     private float CalculateCarHealthLost()
@@ -79,13 +155,12 @@ public class Car : MonoBehaviour
         if (Visibility <= 0)
         {
             numBrokenParts++;
-
         }
         if (Temperature <= 0)
         {
             numBrokenParts++;
         }
 
-        return -Time.deltaTime * (.10f + numBrokenParts);
+        return numBrokenParts == 0 ? 0 : -Time.deltaTime * .2f * (Mathf.Pow(2, numBrokenParts) / 2 - 1);
     }
 }

@@ -7,12 +7,14 @@ public class CraftingSlot : MonoBehaviour, IRecepticle
 
     public void ReceiveItem(Droppable item)
     {
-        if (Item == null)
+        if (Item != null)
         {
-            item.Recepticle = this;
-            Item = item;
-            Item.transform.position = transform.position;
+            Item.transform.Translate(new Vector3(-1, -1));
+            ReleaseItem();
         }
+        item.Recepticle = this;
+        Item = item;
+        Item.transform.position = transform.position;
     }
 
     public void ReleaseItem()
