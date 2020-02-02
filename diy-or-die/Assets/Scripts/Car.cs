@@ -26,9 +26,9 @@ public class Car : MonoBehaviour
     private void Update()
     {
         CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
-        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime);
-        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime);
-        Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime);
+        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime * 0.1f);
+        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime * 0.1f);
+        Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime * 0.1f);
     }
 
     // Changes the slider by the specified amount
