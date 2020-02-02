@@ -26,6 +26,7 @@ public class StickyNoteContentUI : MonoBehaviour
         if (content == null) return; // raise an error or warning?
         Content = content;      
         Name.text = content.Type.ToString();
-        Count.text = "x" + content.Count.ToString();    
+        // comment out count, it is not used right now
+        //Count.text = "x" + content.Count.ToString();    
     }
 }

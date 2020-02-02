@@ -6,6 +6,7 @@ using UnityEngine;
 
 public partial class CraftingController : MonoBehaviour
 {
+    EventManager eventManager;
     public CraftingSlot[] Slots;
     public Droppable[] DroppablePrefabs;
     public StickyNote[] StickyNotes;
@@ -15,6 +16,7 @@ public partial class CraftingController : MonoBehaviour
 
     private void Start()
     {
+        eventManager = FindObjectOfType<EventManager>();
         AssembleRecipies();
 
         Droppables = new Dictionary<ItemType, Droppable>();
@@ -50,6 +52,7 @@ public partial class CraftingController : MonoBehaviour
                 if (recipieComparer.Equals(recipie, items))
                 {
                     product = Instantiate(Droppables[recipieList.Key]);
+                    eventManager.RaiseOnCrafted(recipieList.Key);
                 }
             }
         }

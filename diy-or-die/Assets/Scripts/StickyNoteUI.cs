@@ -8,18 +8,25 @@ public class StickyNoteUI : MonoBehaviour
     public StickyNote Note;
     public Text DescText;
     public Image PartImage;
+    public Image StickyNoteImage;
     public Transform ContentHolder;
     
     // Start is called before the first frame update
     void Start()
     {
-        StickyNoteManager manager = FindObjectOfType<StickyNoteManager>(); 
+        if(Note!=null)
+            Init(Note);
+    }
 
-        if (Note)
+    public void Init(StickyNote _Note)
+    {
+        StickyNoteManager manager = FindObjectOfType<StickyNoteManager>();
+        if (_Note)
         {
-            DescText.text = Note.description;
-            PartImage.sprite = Note.HealingPartImage;
-            foreach (StickyNoteContent mat in Note.Combination)
+            DescText.text = _Note.description;
+            PartImage.sprite = _Note.HealingPartImage;
+            StickyNoteImage.color = manager.StickyColor[(int)_Note.Color];
+            foreach (StickyNoteContent mat in _Note.Combination)
             {
                 GameObject obj = Instantiate(manager.PrefabStickyNoteContent, ContentHolder);
                 obj.GetComponent<StickyNoteContentUI>().Init(mat);

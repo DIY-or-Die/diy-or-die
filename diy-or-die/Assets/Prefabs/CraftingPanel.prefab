@@ -68,9 +68,9 @@ MonoBehaviour:
   - {fileID: 4955698102668315957, guid: 1a84e07b4804e8b4bb479d636957d1d3, type: 3}
   - {fileID: 4955698102668315957, guid: b12afc7d550c266479c4973646185f1e, type: 3}
   StickyNotes:
-  - {fileID: 11400000, guid: 8795254bb6d1e3d42b7f4e1994f6af70, type: 2}
-  - {fileID: 11400000, guid: 92b5df2193adfb14699360a77b73df46, type: 2}
-  - {fileID: 11400000, guid: 82ed53a58199c3e49b27b3453475abc2, type: 2}
+  - {fileID: 11400000, guid: f1a0d2119e0f4da478b3f59a8c1a2a96, type: 2}
+  - {fileID: 11400000, guid: a56d6de0505cfb14eb01526c95609275, type: 2}
+  - {fileID: 11400000, guid: 5e6d69504e106cb429066044605ce7a5, type: 2}
   - {fileID: 11400000, guid: c9123f391a27bfa438cdc6f342d19837, type: 2}
   - {fileID: 11400000, guid: 31d1b4c23012055468053e182a685e75, type: 2}
   - {fileID: 11400000, guid: a3126c870f77fff41b903a5e340f95ed, type: 2}

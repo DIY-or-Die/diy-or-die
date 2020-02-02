@@ -268,6 +268,7 @@ MonoBehaviour:
   Note: {fileID: 0}
   DescText: {fileID: 2495187612272431284}
   PartImage: {fileID: 3331933216056837383}
+  StickyNoteImage: {fileID: 2495187612606894904}
   ContentHolder: {fileID: 2495187612573400883}
 --- !u!114 &2495187612606894902
 MonoBehaviour:
@@ -315,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ceef8ca2637e43744b55310d11ebeaac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da01702f7d5122d48a6921292501b84a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

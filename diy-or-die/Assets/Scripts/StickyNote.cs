@@ -17,5 +17,6 @@ public class StickyNote : ScriptableObject
     public ItemType ItemType;
     public string description;
     public Sprite HealingPartImage;
-    public StickyNoteContent[] Combination; 
+    public StickyNoteContent[] Combination;
+    public StickyNoteColor Color;
 }
