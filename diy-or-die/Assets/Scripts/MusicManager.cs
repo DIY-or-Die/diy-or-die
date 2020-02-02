@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
+using UnityEngine.UI;
 
 public class MusicManager : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class MusicManager : MonoBehaviour
 
     EventInstance birdAmbience;
     EventInstance nightAmbience;
+
+    //public Slider sliderUI;
+    //private Text textSliderValue;
+    //public int slidervalInt;
 
     //100 - 76% Health
     EventDescription musicDescription;
@@ -47,46 +52,61 @@ public class MusicManager : MonoBehaviour
     {
         //birdAmbience = RuntimeManager.CreateInstance("event:/SFX/Ambience/Bird_Ambient");
         //nightAmbience = RuntimeManager.CreateInstance("event:/SFX/Ambience/Night_Ambient");
+        //textSliderValue = GetComponent<Text>();
+        //ShowSliderValue();
        
     }
+
+    //public void ShowSliderValue()
+    //{
+    //    string sliderMessage = "Slider value = " + sliderUI.value;
+    //    textSliderValue.text = sliderMessage;
+    //}
 
     // Update is called once per frame
     void Update()
     {
-
+   
     }
 
     void OnMouseDown()
     {
-        if(gameObject.tag == "75HealthMusic")
+        if(gameObject.tag == "FullHealth")
         {
-            Debug.Log("Dropped 75% Health");
-            musicDescription.getParameterDescriptionByName("Health", out triggerMusic);
-            mID = triggerMusic.id;
-
-            music.setParameterByID(mID, 3.00f);
-        } 
-        else if (gameObject.tag == "50HealthMusic")
-        {
-            musicDescription.getParameterDescriptionByName("Health", out triggerMusic);
-            mID = triggerMusic.id;
-
-            music.setParameterByID(mID, 2.00f);
-        }
-        else if (gameObject.tag == "25HealthMusic")
-        {
-            musicDescription.getParameterDescriptionByName("Health", out triggerMusic);
-            mID = triggerMusic.id;
-
-            music.setParameterByID(mID, 1.00f);
-        }
-        else if (gameObject.tag == "music")
-        {
+            Debug.Log("Full Health");
             musicDescription.getParameterDescriptionByName("Health", out triggerMusic);
             mID = triggerMusic.id;
 
             music.setParameterByID(mID, 4.00f);
         }
+
+        if(gameObject.tag == "75HealthMusic")
+        {
+            Debug.Log("Dropped 75% Health");
+            musicDescription.getParameterDescriptionByName("Health", out ThreeFourthsHp);
+            mID = ThreeFourthsHp.id;
+
+            music.setParameterByID(mID, 3.00f);
+        }
+
+        else if (gameObject.tag == "50HealthMusic")
+        {
+            Debug.Log("Dropped 50% Health");
+            musicDescription.getParameterDescriptionByName("Health", out TwoFourthsHP);
+            mID = TwoFourthsHP.id;
+
+            music.setParameterByID(mID, 2.00f);
+        }
+        else if (gameObject.tag == "25HealthMusic")
+        {
+            Debug.Log("Dropped 25% Health");
+            musicDescription.getParameterDescriptionByName("Health", out OneFourthHP);
+            mID = OneFourthHP.id;
+
+            music.setParameterByID(mID, 1.00f);
+        }
+        //else if (gameObject.tag == "music")
+
 
     }
 

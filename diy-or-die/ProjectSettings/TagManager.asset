@@ -14,6 +14,8 @@ TagManager:
   - 75HealthMusic
   - 50HealthMusic
   - 25HealthMusic
+  - CarHealth
+  - FullHealth
   layers:
   - Default
   - TransparentFX
