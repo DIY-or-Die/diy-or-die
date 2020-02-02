@@ -5,6 +5,7 @@ public class MaterialGenerator : MonoBehaviour
     public Droppable[] DroppablePrefabs;
     public float DropPeriod;
     public Car Car;
+    public bool SpeedsUp;
 
     private float Timer;
 
@@ -18,13 +19,16 @@ public class MaterialGenerator : MonoBehaviour
             Timer += DropPeriod;
         }
 
-        if (Car.Traction < 1 || Car.Temperature < 1 || Car.Visibility < 1)
+        if (SpeedsUp)
         {
-            DropPeriod = 1;
-        }
-        else
-        {
-            DropPeriod = 3;
+            if (Car.Traction < 1 || Car.Temperature < 1 || Car.Visibility < 1)
+            {
+                DropPeriod = 1;
+            }
+            else
+            {
+                DropPeriod = 3;
+            }
         }
     }
 
