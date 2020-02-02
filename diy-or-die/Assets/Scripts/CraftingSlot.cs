@@ -8,21 +8,15 @@ public class CraftingSlot : MonoBehaviour, IRecepticle
     {
         if (Item == null)
         {
+            item.Recepticle = this;
             Item = item;
             Item.transform.position = transform.position;
         }
     }
 
-    private void Update()
+    public void ReleaseItem()
     {
-        if (Item != null && Item.IsDragging)
-        {
-            EmptySlot();
-        }
-    }
-
-    public void EmptySlot()
-    {
+        Item.Recepticle = null;
         Item = null;
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Collider2D))]
@@ -9,7 +8,23 @@ public class Droppable : MonoBehaviour
     public Collider2D DragCollider { get; private set; }
     public DragController DragController { get; private set; }
 
-    public bool IsDragging { get; set; }
+    private bool _isDragging;
+    public bool IsDragging
+    {
+        get
+        {
+            return _isDragging;
+        }
+        set
+        {
+            _isDragging = value;
+            if (_isDragging && Recepticle != null)
+            {
+                Recepticle.ReleaseItem();
+            }
+        }
+    }
+    public IRecepticle Recepticle { get; set; }
 
     public RepairItem RepairItem;
 

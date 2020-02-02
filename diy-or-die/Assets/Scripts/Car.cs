@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Car : MonoBehaviour, IRecepticle
+public class Car : MonoBehaviour
 {
     public Slider CarHealthSlider;
     public Slider TractionSlider;
@@ -41,12 +41,5 @@ public class Car : MonoBehaviour, IRecepticle
         slider.value = currentHealth / 10;
 
         return currentHealth;
-    }
-
-    public void ReceiveItem(Droppable item)
-    {
-        Traction += item.RepairItem.TractionValue;
-        Visibility += item.RepairItem.VisibilityValue;
-        Temperature += item.RepairItem.TemperatureValue;
     }
 }

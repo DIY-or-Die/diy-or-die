@@ -334,6 +334,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8862598159484654641}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &277228559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7690785912689516062, guid: c4d24083e42637b49a74e422b49f469d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8862598159484654641}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &392369940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,12 +1365,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 318459504420934426, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 318459504420934426, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 318459504420934427, guid: edfffd3de733c0940893ac4d7a73deb0,
         type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2616819970499418900, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684754046007580506, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684754046007580507, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_Name
+      value: VisbilityHub
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400339282549857079, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: CarHealthSlider
+      value: 
+      objectReference: {fileID: 277228559}
+    - target: {fileID: 7400339282549857079, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: TractionSlider
+      value: 
+      objectReference: {fileID: 645470912}
+    - target: {fileID: 7400339282549857079, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: VisibilitySlider
+      value: 
+      objectReference: {fileID: 508838336}
+    - target: {fileID: 7400339282549857079, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: TemperatureSlider
+      value: 
+      objectReference: {fileID: 1381529786}
+    m_RemovedComponents:
+    - {fileID: 318459504420934425, guid: edfffd3de733c0940893ac4d7a73deb0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: edfffd3de733c0940893ac4d7a73deb0, type: 3}
 --- !u!1001 &3466201221944543062
 PrefabInstance:
@@ -1560,6 +1618,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 3439191645547407447, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5261225713334117909, guid: c4d24083e42637b49a74e422b49f469d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1584,6 +1647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235363812872385411, guid: c4d24083e42637b49a74e422b49f469d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8622801140766768897, guid: c4d24083e42637b49a74e422b49f469d,
         type: 3}
