@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
+using FMODUnity;
 
 public class AudioManager : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class AudioManager : MonoBehaviour
     //Sound Effects
     string carHonk = "event:/SFX/Car/Car_Honk";
     string startCar = "event:/SFX/Car/Car_Start";
+    string clicking = "event:/SFX/UI/Clicking";
+    string dropping = "event:/SFX/UI/Dropping";
 
     void Awake()
     {
@@ -32,8 +35,8 @@ public class AudioManager : MonoBehaviour
 
         //startCar= FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Start");
 
-        carMoving = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Moving");
-        carReached = FMODUnity.RuntimeManager.GetEventDescription("event:/SFX/Car/Car_Moving");
+        carMoving = RuntimeManager.CreateInstance("event:/SFX/Car/Car_Moving");
+        carReached = RuntimeManager.GetEventDescription("event:/SFX/Car/Car_Moving");
 
         carMoving.start();
         
@@ -66,6 +69,26 @@ public class AudioManager : MonoBehaviour
         carReached.getParameterDescriptionByName("Intensity", out triggerCarReached);
         cID = triggerCarReached.id;
         carMoving.setParameterByID(cID, 1.00f);
+    }
+
+    void OnMouseDown()
+    {
+        //Debug.Log("Clicked on something");
+        if (gameObject)
+        {
+            Debug.Log("Grabbed item");
+            RuntimeManager.PlayOneShot(clicking);
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Dropping");
+
+
+        }
+        //FMODUnity.RuntimeManager.PlayOneShot(clicking);
+    }
+
+    void OnMouseUp()
+    {
+        RuntimeManager.PlayOneShot(dropping);
+
     }
 
     //private void OnMouseDown()
