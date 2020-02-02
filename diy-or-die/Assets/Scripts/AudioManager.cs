@@ -5,15 +5,12 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
-    EventInstance music;
-
-    EventInstance birdAmbience;
-    EventInstance nightAmbience;
-
     EventInstance carMoving;
     EventDescription carReached;
     PARAMETER_DESCRIPTION triggerCarReached;
     PARAMETER_ID cID;
+
+    PLAYBACK_STATE playState;
 
     bool NightModeOn = false;
     bool carOn = false;
@@ -32,8 +29,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        birdAmbience = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ambience/Bird_Ambient");
-        nightAmbience = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ambience/Night_Ambient");
+
         //startCar= FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Start");
 
         carMoving = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Moving");
@@ -43,9 +39,17 @@ public class AudioManager : MonoBehaviour
         //    Debug.Log("Car loaded");
         //    carMoving.start();
         //}
+        //Debug.Log(gameObject.tag);
+        if(gameObject.tag == "inGameCar")
+        {
+            Debug.Log("Inside here");
+            carMoving.getPlaybackState(out playState);
 
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Car/Car_Moving");
-        carMoving.start();
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Car/Car_Moving");
+            carMoving.start();
+        }
+        
+        Debug.Log(playState);
 
 
     }
@@ -57,8 +61,6 @@ public class AudioManager : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot(carHonk);
         }
-
-  
 
     }
 
@@ -80,23 +82,7 @@ public class AudioManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Debug.Log("Night Mode");
-        if(gameObject.tag == "Night_Ambience")
-        {
-            
-            if (!NightModeOn)
-            {
-                Debug.Log("Night Mode Click");
-                birdAmbience.start();
-                //nightAmbience.start();
-                NightModeOn = true;
-            } else
-            {
-                NightModeOn = false;
-                birdAmbience.setPaused(false);
-                //nightAmbience.setPaused(false);
-            }
-        }
+
         if(gameObject.tag == "StartingCar" && carOn == false)
         {
             Debug.Log("Starting Car");
