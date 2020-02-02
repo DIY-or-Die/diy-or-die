@@ -56,17 +56,20 @@ public class Droppable : MonoBehaviour
             Glow.transform.localScale = UnitVector * OriginalScale * (.75f + .5f * Mathf.Abs(Mathf.Sin(Time.time * 3)));
         }
 
-        if (Recepticle != null && Recepticle.UsesPart)
+        if (PartHealth != -1)
         {
-            PartHealth -= Time.deltaTime;
-            if (PartHealth < 0)
+            if (Recepticle != null && Recepticle.UsesPart)
             {
-                Destroy(gameObject);
+                PartHealth -= Time.deltaTime;
+                if (PartHealth < 0)
+                {
+                    Destroy(gameObject);
+                }
             }
-        }
-        else if (Recepticle != null && PartHealth < MaxHealth)
-        {
-            PartHealth += Time.deltaTime;
+            else if (Recepticle != null && PartHealth < MaxHealth)
+            {
+                PartHealth += Time.deltaTime;
+            }
         }
 
         if (IsDragging || Recepticle != null)

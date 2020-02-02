@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7539b72fe90fa7e46a698937a894ed7d, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: d09fba2d3f46fe4409e9d1f35b9ad7f6, type: 2}
   Glow: {fileID: 491533632480035953}
-  PartHealth: 15
+  PartHealth: 30
 --- !u!1 &6728449038548324854
 GameObject:
   m_ObjectHideFlags: 0

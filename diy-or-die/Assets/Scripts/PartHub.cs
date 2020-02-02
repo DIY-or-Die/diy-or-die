@@ -47,6 +47,7 @@ public class PartHub : MonoBehaviour, IRecepticle
             item.Recepticle = this;
             Item = item;
             Item.transform.position = transform.position;
+            Item.transform.Translate(new Vector3(0, -1.6f, 0));
         }
     }
 

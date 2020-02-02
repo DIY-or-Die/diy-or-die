@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2d8207bdcb74a1c8d7be38b9185efb, type: 3}
-  m_Name: Metal
+  m_Name: FluxCapacitator
   m_EditorClassIdentifier: 
-  IsMaterial: 1
-  HealthType: 0
-  HealthValue: 0
-  Sprite: {fileID: 21300000, guid: 6b75d3f8828604d47bf960d7fb8aaab3, type: 3}
-  ItemType: 11
-  TractionValue: 1.5
-  VisibilityValue: 1
-  TemperatureValue: 1.5
+  IsMaterial: 0
+  HealthType: 3
+  HealthValue: 3
+  Sprite: {fileID: 21300000, guid: b941211fce7cf97468a81af6b3e0b122, type: 3}
+  ItemType: 16
+  TractionValue: 0
+  VisibilityValue: 0
+  TemperatureValue: 0

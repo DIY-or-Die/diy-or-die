@@ -19,4 +19,4 @@ MonoBehaviour:
   ItemType: 14
   TractionValue: 1
   VisibilityValue: 1
-  TemperatureValue: 0
+  TemperatureValue: 3
