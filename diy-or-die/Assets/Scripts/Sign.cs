@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
-    public Animator animator;
-    public Text text;
+    public Animator animator;        
     public GameManager GM;
     public bool AnimationAvailable;
     public GameObject SignUI;            
@@ -29,7 +28,6 @@ public class Sign : MonoBehaviour
     public void PlayAnimation()
     {
         float remainingTime = GM.WinTimer - GM.WinTimeElapsed;
-        text.text = "Goal\n"+ remainingTime.ToString("0.00") +" miles";
         SignUI.SetActive(true);
         animator.SetBool("Play", true);
         AnimationAvailable = false;
