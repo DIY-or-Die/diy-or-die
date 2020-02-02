@@ -33,6 +33,8 @@ public class Droppable : MonoBehaviour
 
     private float IdleTimer = 10;
     private Vector3 UnitVector;
+    private float OriginalScale;
+    private float MaxHealth;
 
     private void Start()
     {
@@ -42,6 +44,8 @@ public class Droppable : MonoBehaviour
 
         Renderer.sprite = RepairItem.Sprite;
         OriginalPartHealth = PartHealth;
+        MaxHealth = OriginalPartHealth;
+        OriginalScale = Glow.transform.localScale.x;
         UnitVector = new Vector3(1, 1, 1);
     }
 
@@ -49,7 +53,7 @@ public class Droppable : MonoBehaviour
     {
         if (Glow != null)
         {
-            Glow.transform.localScale = UnitVector * (.75f + .5f * Mathf.Abs(Mathf.Sin(Time.time * 3)));
+            Glow.transform.localScale = UnitVector * OriginalScale * (.75f + .5f * Mathf.Abs(Mathf.Sin(Time.time * 3)));
         }
 
         if (Recepticle != null && Recepticle.UsesPart)
@@ -60,8 +64,10 @@ public class Droppable : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else { 
-}
+        else if (Recepticle != null && PartHealth < MaxHealth)
+        {
+            PartHealth += Time.deltaTime;
+        }
 
         if (IsDragging || Recepticle != null)
         {
