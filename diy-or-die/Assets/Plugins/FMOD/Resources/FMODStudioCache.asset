@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Start
   guid: 4d767936397331458b9d44bd713cb82e
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: ddeb9a5ce8aeea4db2f54b764ff099b9
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambience/Night_Ambient
   guid: 934abfcb2f1d714ca20689d3ffd53820
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -118,11 +118,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161693985213423
+  lastModified: 637161710199035166
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1046
+  Exists: 1
+--- !u!114 &-904941940318082924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Car_Moving/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -138,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1141554773398299164}
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   EditorEvents:
   - {fileID: 9037653237011336041}
   - {fileID: -7601924661241967323}
@@ -148,10 +165,10 @@ MonoBehaviour:
   - {fileID: -6199416581966936214}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   StringsBanks:
   - {fileID: -1141554773398299164}
-  stringsBankWriteTime: 637161693985213423
+  stringsBankWriteTime: 637161710199035166
   cacheVersion: 3
 --- !u!114 &3457794002929022748
 MonoBehaviour:
@@ -168,12 +185,12 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Moving
   guid: 5f0d46c3a805e24da3edd9c2c423aaca
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -4134491800169993360}
+  - {fileID: -904941940318082924}
   MinDistance: 1
   MaxDistance: 20
   Length: 92961
@@ -192,7 +209,7 @@ MonoBehaviour:
   Path: event:/SFX/Car/Car_Honk
   guid: 5c803d81ab65eb43bb75cd8470ca8c14
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -200,6 +217,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 235
+--- !u!114 &7499465540897159778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161710199015235
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &9037653237011336041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +250,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambience/Bird_Ambient
   guid: 23f1e77b6733bd4cb7f8e509ca20fb90
   Banks:
-  - {fileID: -3967987197958992329}
+  - {fileID: 7499465540897159778}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
