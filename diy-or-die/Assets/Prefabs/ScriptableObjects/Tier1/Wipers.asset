@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wipers
   m_EditorClassIdentifier: 
   IsMaterial: 0
+  HealthType: 2
   Sprite: {fileID: 21300000, guid: bc0d361a499d25a47b178d9545c83e2a, type: 3}
   ItemType: 7
   TractionValue: 0

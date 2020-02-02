@@ -5,6 +5,7 @@ public class PartHub : MonoBehaviour, IRecepticle
     public Droppable Item { get; set; }
 
     public Car Car;
+    public HealthType HealthType;
 
     public void ReceiveItem(Droppable item)
     {
@@ -14,6 +15,10 @@ public class PartHub : MonoBehaviour, IRecepticle
             Car.Visibility += item.RepairItem.VisibilityValue;
             Car.Temperature += item.RepairItem.TemperatureValue;
             Destroy(item.gameObject);
+        }
+        else if (item.RepairItem.HealthType != HealthType)
+        {
+            Car.AssignItem(item);
         }
         else
         {

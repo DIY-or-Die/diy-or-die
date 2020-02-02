@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,19 @@ public class Car : MonoBehaviour
     public Slider CarHealthSlider;
     public Slider TractionSlider;
     public Slider VisibilitySlider;
+    public PartHub[] Hubs;
+
+    internal void AssignItem(Droppable item)
+    {
+        foreach (PartHub hub in Hubs)
+        {
+            if (hub.Item == null && item.RepairItem.HealthType == hub.HealthType)
+            {
+                hub.ReceiveItem(item);
+            }
+        }
+    }
+
     public Slider TemperatureSlider;
 
     public float CarHealth { get; set; }
