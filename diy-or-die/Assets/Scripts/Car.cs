@@ -26,8 +26,8 @@ public class Car : MonoBehaviour
     private void Update()
     {
         CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
-        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime * 3);
-        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime * 2);
+        Traction = ModifyHealth(Traction, TractionSlider, -Time.deltaTime);
+        Visibility = ModifyHealth(Visibility, VisibilitySlider, -Time.deltaTime);
         Temperature = ModifyHealth(Temperature, TemperatureSlider, -Time.deltaTime);
     }
 
@@ -60,6 +60,6 @@ public class Car : MonoBehaviour
             numBrokenParts++;
         }
 
-        return -Time.deltaTime * (.25f + numBrokenParts);
+        return -Time.deltaTime * (.10f + numBrokenParts);
     }
 }
