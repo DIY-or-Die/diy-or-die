@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class StickyNoteContent
 {
-    public string Name;
+    public ItemType Type;
     public int Count;
 }
                               
@@ -25,7 +25,7 @@ public class StickyNoteContentUI : MonoBehaviour
     {
         if (content == null) return; // raise an error or warning?
         Content = content;      
-        Name.text = content.Name;
+        Name.text = content.Type.ToString();
         Count.text = "x" + content.Count.ToString();    
     }
 }

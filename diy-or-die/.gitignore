@@ -27,6 +27,7 @@
 
 # FMOD
 Assets/Plugins/FMOD/Resources/
+Assets/Plugins/FMOD/Resources/FMODStudioCache
 Assets/FMODStudioCache.asset
 Assets/FMODStudioCache.asset.meta
 fmod.log

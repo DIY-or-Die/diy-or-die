@@ -1,5 +1,68 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+=======
+--- !u!114 &-8056636669291053256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637161693985213423
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1046
+  Exists: 1
+--- !u!114 &-3249575785563656298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Car_Moving/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-1409181214286964177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Car/Car_Honk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Car/Car_Honk
+  guid: 5c803d81ab65eb43bb75cd8470ca8c14
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 235
+>>>>>>> 55854cc88c06c25a4cdba18d92922aabceb29df8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   EditorBanks: []
   EditorEvents: []
   EditorParameters: []
@@ -19,3 +83,156 @@ MonoBehaviour:
   StringsBanks: []
   stringsBankWriteTime: 0
   cacheVersion: 3
+=======
+  EditorBanks:
+  - {fileID: -8056636669291053256}
+  - {fileID: 8512495572285753566}
+  EditorEvents:
+  - {fileID: 1461799500087861740}
+  - {fileID: 3552917124460299378}
+  - {fileID: -1409181214286964177}
+  - {fileID: 8670687770217743106}
+  - {fileID: 811585515483685382}
+  - {fileID: 7476849885156318945}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8512495572285753566}
+  StringsBanks:
+  - {fileID: -8056636669291053256}
+  stringsBankWriteTime: 637161693985213423
+  cacheVersion: 3
+--- !u!114 &811585515483685382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Night_Ambient
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Night_Ambient
+  guid: 934abfcb2f1d714ca20689d3ffd53820
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 233080
+--- !u!114 &1461799500087861740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Bird_Ambient
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Bird_Ambient
+  guid: 23f1e77b6733bd4cb7f8e509ca20fb90
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29686
+--- !u!114 &3552917124460299378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Car/Car_Start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Car/Car_Start
+  guid: 4d767936397331458b9d44bd713cb82e
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10419
+--- !u!114 &7476849885156318945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: ddeb9a5ce8aeea4db2f54b764ff099b9
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8512495572285753566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/diy-or-die_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161693985193432
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8670687770217743106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Car/Car_Moving
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Car/Car_Moving
+  guid: 5f0d46c3a805e24da3edd9c2c423aaca
+  Banks:
+  - {fileID: 8512495572285753566}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3249575785563656298}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 92961
+>>>>>>> 55854cc88c06c25a4cdba18d92922aabceb29df8
