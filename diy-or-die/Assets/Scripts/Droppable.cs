@@ -26,11 +26,13 @@ public class Droppable : MonoBehaviour
     }
     public IRecepticle Recepticle { get; set; }
     public RepairItem RepairItem;
+    public SpriteRenderer Glow;
 
     public float OriginalPartHealth { get; set; }
     public float PartHealth;
 
     private float IdleTimer = 10;
+    private Vector3 UnitVector;
 
     private void Start()
     {
@@ -40,10 +42,16 @@ public class Droppable : MonoBehaviour
 
         Renderer.sprite = RepairItem.Sprite;
         OriginalPartHealth = PartHealth;
+        UnitVector = new Vector3(1, 1, 1);
     }
 
     private void Update()
     {
+        if (Glow != null)
+        {
+            Glow.transform.localScale = UnitVector * (.75f + .5f * Mathf.Abs(Mathf.Sin(Time.time * 3)));
+        }
+
         if (Recepticle != null && Recepticle.UsesPart)
         {
             PartHealth -= Time.deltaTime;
@@ -76,6 +84,10 @@ public class Droppable : MonoBehaviour
         }
         float healthVal = OriginalPartHealth == 0 ? 1 : PartHealth / OriginalPartHealth;
         Renderer.color = new Color(1, healthVal, healthVal, IdleTimer / 10);
+        if (Glow != null)
+        {
+            Glow.color = new Color(1, 1, 1, IdleTimer / 10);
+        }
     }
 
     private void OnMouseDown()
