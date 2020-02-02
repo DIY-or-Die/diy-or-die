@@ -12,6 +12,7 @@ public class MaterialGenerator : MonoBehaviour
     private void Start()
     {
         OriginalDropPeriod = DropPeriod;
+        Timer = DropPeriod;
     }
 
     private void Update()
