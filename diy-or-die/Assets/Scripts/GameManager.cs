@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public float WinTimer = 100.0f; // seconds 
     public float WinTimeElapsed = 0;
 
+    public delegate void WinEvent();
+    public WinEvent OnWin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class GameManager : MonoBehaviour
                 // Win!
                 WinTimeElapsed = 0.0f;
                 GameIsFinished = true;
+                OnWin?.Invoke();
             }
         }
     }
