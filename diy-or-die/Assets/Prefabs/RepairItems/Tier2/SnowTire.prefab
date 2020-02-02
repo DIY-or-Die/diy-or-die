@@ -124,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: d1befac11589a004aa7928931951d91f, type: 2}
   Glow: {fileID: 6824609348518555237}
-  PartHealth: 30
+  PartHealth: 20
 --- !u!1 &7433139595777993483
 GameObject:
   m_ObjectHideFlags: 0
