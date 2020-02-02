@@ -12,7 +12,7 @@ public class StickyNoteUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DashboardManager manager = FindObjectOfType<DashboardManager>(); 
+        StickyNoteManager manager = FindObjectOfType<StickyNoteManager>(); 
 
         if (Note)
         {
