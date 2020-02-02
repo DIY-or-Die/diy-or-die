@@ -17,9 +17,20 @@ public class PartHub : MonoBehaviour, IRecepticle
     {
         if (item.RepairItem.IsMaterial)
         {
-            Car.Traction += item.RepairItem.TractionValue;
-            Car.Visibility += item.RepairItem.VisibilityValue;
-            Car.Temperature += item.RepairItem.TemperatureValue;
+            switch (HealthType)
+            {
+                case HealthType.Traction:
+                    Car.Traction += item.RepairItem.TractionValue;
+                    break;
+                case HealthType.Visibility:
+                    Car.Visibility += item.RepairItem.VisibilityValue;
+                    break;
+                case HealthType.Temperature:
+                    Car.Temperature += item.RepairItem.TemperatureValue;
+                    break;
+                default:
+                    break;
+            }
             Destroy(item.gameObject);
         }
         else if (item.RepairItem.HealthType != HealthType)

@@ -1682,16 +1682,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VisibilityHub
       objectReference: {fileID: 0}
-    - target: {fileID: 1582074560554394828, guid: edfffd3de733c0940893ac4d7a73deb0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582074560554394828, guid: edfffd3de733c0940893ac4d7a73deb0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1582074560554394829, guid: edfffd3de733c0940893ac4d7a73deb0,
         type: 3}
       propertyPath: m_IsActive
@@ -1796,16 +1786,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006596710708503322, guid: edfffd3de733c0940893ac4d7a73deb0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006596710708503322, guid: edfffd3de733c0940893ac4d7a73deb0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 318459504420934425, guid: edfffd3de733c0940893ac4d7a73deb0, type: 3}
