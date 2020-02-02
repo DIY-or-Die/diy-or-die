@@ -61,6 +61,10 @@ MonoBehaviour:
   - {fileID: 4955698102668315957, guid: 85c85960177c1c14988ca2fc0394910f, type: 3}
   - {fileID: 4955698102668315957, guid: 7615bdcd9c867024392ea4c1d71449ce, type: 3}
   - {fileID: 4955698102668315957, guid: a5a5159a4ff669e4b9470670bfbb93bf, type: 3}
+  StickyNotes:
+  - {fileID: 11400000, guid: 8795254bb6d1e3d42b7f4e1994f6af70, type: 2}
+  - {fileID: 11400000, guid: 92b5df2193adfb14699360a77b73df46, type: 2}
+  - {fileID: 11400000, guid: 82ed53a58199c3e49b27b3453475abc2, type: 2}
 --- !u!1001 &3131129716105076759
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class StickyNoteContent
 [CreateAssetMenu()]
 public class StickyNote : ScriptableObject
 {
+    public ItemType ItemType;
     public string description;
     public StickyNoteContent[] Combination; 
 }
