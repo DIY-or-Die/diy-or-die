@@ -64,7 +64,7 @@ public class Droppable : MonoBehaviour
                     Destroy(gameObject);
                 }
             }
-            else if (Recepticle != null)
+            else if (Recepticle != null && PartHealth < OriginalPartHealth)
             {
                 PartHealth += Time.deltaTime;
             }

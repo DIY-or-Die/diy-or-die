@@ -7,6 +7,12 @@ public class MaterialGenerator : MonoBehaviour
     public Car Car;
 
     private float Timer;
+    private float OriginalDropPeriod;
+
+    private void Start()
+    {
+        OriginalDropPeriod = DropPeriod;
+    }
 
     private void Update()
     {
@@ -18,13 +24,16 @@ public class MaterialGenerator : MonoBehaviour
             Timer += DropPeriod;
         }
 
-        if (Car.Traction < 1 || Car.Temperature < 1 || Car.Visibility < 1)
+        if (OriginalDropPeriod == 3)
         {
-            DropPeriod = 1;
-        }
-        else
-        {
-            DropPeriod = 3;
+            if (Car.Traction < 1 || Car.Temperature < 1 || Car.Visibility < 1)
+            {
+                DropPeriod = 1;
+            }
+            else
+            {
+                DropPeriod = 3;
+            }
         }
     }
 

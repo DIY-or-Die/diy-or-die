@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 4955698102668315957, guid: 20ca778469e120c4fb56e40dd434254a, type: 3}
   - {fileID: 4955698102668315957, guid: 7cfa25f2713e5dc44bca5131844e8e9f, type: 3}
   DropPeriod: 3
+  Car: {fileID: 0}
