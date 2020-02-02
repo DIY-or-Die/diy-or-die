@@ -2,16 +2,23 @@
 
 public enum ItemType
 {
-    Junk,
+    SnowTire,
+    MudTire,
+    Antifreeze,
+    SpeedWipers,
+    Radiator,
+    Grill,
 
     Tire,
     Wipers,
-    Radiator,
+    Engine,
 
     Rubber,
     Fluid,
     Metal,
     Bolts,
     Plastic,
-    Spring
+    Spring,
+
+    Junk
 }

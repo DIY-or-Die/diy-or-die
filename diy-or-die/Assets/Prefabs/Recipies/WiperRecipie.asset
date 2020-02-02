@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
   m_Name: WiperRecipie
   m_EditorClassIdentifier: 
+  ItemType: 7
   description: To fix visibility,
   Combination:
-  - Type: 4
-    Count: 1
-  - Type: 5
-    Count: 1
   - Type: 9
+    Count: 1
+  - Type: 10
+    Count: 1
+  - Type: 13
     Count: 1
