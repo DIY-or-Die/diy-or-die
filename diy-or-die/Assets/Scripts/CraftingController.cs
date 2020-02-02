@@ -8,6 +8,7 @@ public partial class CraftingController : MonoBehaviour
 {
     public CraftingSlot[] Slots;
     public Droppable[] DroppablePrefabs;
+    public StickyNote[] StickyNotes;
 
     private Dictionary<ItemType, Droppable> Droppables;
     public Dictionary<ItemType, List<Dictionary<ItemType, int>>> Recipies { get; private set; }

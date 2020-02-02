@@ -10,27 +10,24 @@ public partial class CraftingController : MonoBehaviour
     private void AssembleRecipies()
     {
         Recipies = new Dictionary<ItemType, List<Dictionary<ItemType, int>>>();
-        Recipies[ItemType.Tire] = new List<Dictionary<ItemType, int>>();
-        Recipies[ItemType.Wipers] = new List<Dictionary<ItemType, int>>();
-        Recipies[ItemType.Radiator] = new List<Dictionary<ItemType, int>>();
+        foreach (StickyNote stickyNote in StickyNotes)
+        {
+            if (!Recipies.ContainsKey(stickyNote.ItemType))
+            {
+                Recipies[stickyNote.ItemType] = new List<Dictionary<ItemType, int>>();
+            }
 
-        Dictionary<ItemType, int> tireRecipie = new Dictionary<ItemType, int>();
-        tireRecipie[ItemType.Rubber] = 1;
-        tireRecipie[ItemType.Metal] = 1;
-        tireRecipie[ItemType.Bolts] = 1;
-        Recipies[ItemType.Tire].Add(tireRecipie);
-
-        Dictionary<ItemType, int> wiperRecipie = new Dictionary<ItemType, int>();
-        wiperRecipie[ItemType.Rubber] = 1;
-        wiperRecipie[ItemType.Fluid] = 1;
-        wiperRecipie[ItemType.Plastic] = 1;
-        Recipies[ItemType.Wipers].Add(wiperRecipie);
-
-        Dictionary<ItemType, int> radiatorRecipie = new Dictionary<ItemType, int>();
-        radiatorRecipie[ItemType.Fluid] = 1;
-        radiatorRecipie[ItemType.Metal] = 1;
-        radiatorRecipie[ItemType.Spring] = 1;
-        Recipies[ItemType.Radiator].Add(radiatorRecipie);
+            Dictionary<ItemType, int> recipie = new Dictionary<ItemType, int>();
+            foreach (StickyNoteContent content in stickyNote.Combination)
+            {
+                if (!recipie.ContainsKey(content.Type))
+                {
+                    recipie[content.Type] = 0;
+                }
+                recipie[content.Type] += 1;
+            }
+            Recipies[stickyNote.ItemType].Add(recipie);
+        };
     }
 
     private Dictionary<ItemType, int> CreateRecipie(CraftingSlot[] slots)
