@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4955698102668315955}
   - component: {fileID: 4955698102668315952}
   - component: {fileID: 4955698102668315957}
+  - component: {fileID: -3270012451697365833}
   m_Layer: 0
   m_Name: Plastic
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: 7333a05cf528eff4bbce860ae2f814ee, type: 2}
+  PartHealth: 0
+--- !u!114 &-3270012451697365833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4955698102668315953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e81d533ebf5914ea70929aff3ee186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
