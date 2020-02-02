@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
 
     PLAYBACK_STATE playState;
 
-    bool NightModeOn = false;
+    //bool NightModeOn = false;
     bool carOn = false;
     //Ambient Sounds
 
@@ -34,22 +34,10 @@ public class AudioManager : MonoBehaviour
 
         carMoving = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Car/Car_Moving");
         carReached = FMODUnity.RuntimeManager.GetEventDescription("event:/SFX/Car/Car_Moving");
-        //if (gameObject.tag == "carInGame")
-        //{
-        //    Debug.Log("Car loaded");
-        //    carMoving.start();
-        //}
-        //Debug.Log(gameObject.tag);
-        if(gameObject.tag == "inGameCar")
-        {
-            Debug.Log("Inside here");
-            carMoving.getPlaybackState(out playState);
 
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Car/Car_Moving");
-            carMoving.start();
-        }
+        carMoving.start();
         
-        Debug.Log(playState);
+        //Debug.Log(playState);
 
 
     }
@@ -57,7 +45,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("space"))
+        if(Input.GetKeyDown("h"))
         {
             FMODUnity.RuntimeManager.PlayOneShot(carHonk);
         }
@@ -80,25 +68,25 @@ public class AudioManager : MonoBehaviour
         carMoving.setParameterByID(cID, 1.00f);
     }
 
-    private void OnMouseDown()
-    {
+    //private void OnMouseDown()
+    //{
 
-        if(gameObject.tag == "StartingCar" && carOn == false)
-        {
-            Debug.Log("Starting Car");
-            carOn = true;
-            //startCar.start();
-            FMODUnity.RuntimeManager.PlayOneShot(startCar);
-        }
-    }
+    //    if(gameObject.tag == "StartingCar" && carOn == false)
+    //    {
+    //        Debug.Log("Starting Car");
+    //        carOn = true;
+    //        //startCar.start();
+    //        FMODUnity.RuntimeManager.PlayOneShot(startCar);
+    //    }
+    //}
 
-    private void OnMouseOver()
-    {
-        if (gameObject.tag == "ReachedToPitStop")
-        {
-            ReachedPitStop();
-        }
-    }
+    //private void OnMouseOver()
+    //{
+    //    if (gameObject.tag == "ReachedToPitStop")
+    //    {
+    //        ReachedPitStop();
+    //    }
+    //}
 
 
 }
