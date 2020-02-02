@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RepairItem: {fileID: 11400000, guid: 7d888df1eb671eb40a6a6c1b02b631ff, type: 2}
+  PartHealth: 15

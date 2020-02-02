@@ -3,9 +3,15 @@
 public class PartHub : MonoBehaviour, IRecepticle
 {
     public Droppable Item { get; set; }
+    public bool UsesPart { get; private set; }
 
     public Car Car;
     public HealthType HealthType;
+
+    private void Start()
+    {
+        UsesPart = false;
+    }
 
     public void ReceiveItem(Droppable item)
     {

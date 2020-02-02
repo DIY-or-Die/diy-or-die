@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -55,6 +56,17 @@ public class Car : MonoBehaviour
         slider.value = currentHealth / 10;
 
         return currentHealth;
+    }
+
+    private float CalculateHealthTypeLost(HealthType healthType)
+    {
+        PartHub hub = Hubs.First(h => h.HealthType == healthType);
+
+        if (!hub.Item)
+        {
+            return -.1f * Time.deltaTime;
+        }
+        return .1f * hub.Item.RepairItem.HealthValue * Time.deltaTime;
     }
 
     private float CalculateCarHealthLost()

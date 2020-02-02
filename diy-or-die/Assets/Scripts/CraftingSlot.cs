@@ -3,6 +3,7 @@
 public class CraftingSlot : MonoBehaviour, IRecepticle
 {
     public Droppable Item { get; set; }
+    public bool UsesPart { get; private set; }
 
     public void ReceiveItem(Droppable item)
     {
