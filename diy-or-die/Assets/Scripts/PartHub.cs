@@ -10,7 +10,7 @@ public class PartHub : MonoBehaviour, IRecepticle
 
     private void Start()
     {
-        UsesPart = false;
+        UsesPart = true;
     }
 
     public void ReceiveItem(Droppable item)
@@ -28,12 +28,14 @@ public class PartHub : MonoBehaviour, IRecepticle
         }
         else
         {
-            if (Item == null)
+            if (Item != null)
             {
-                item.Recepticle = this;
-                Item = item;
-                Item.transform.position = transform.position;
+                Item.transform.Translate(new Vector3(1, 1));
+                ReleaseItem();
             }
+            item.Recepticle = this;
+            Item = item;
+            Item.transform.position = transform.position;
         }
     }
 

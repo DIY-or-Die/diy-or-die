@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsMaterial: 0
   HealthType: 3
-  HealthValue: 3
+  HealthValue: 2
   Sprite: {fileID: 21300000, guid: 2a1018e4002ce8d41997311c300c09a8, type: 3}
   ItemType: 4
   TractionValue: 0
