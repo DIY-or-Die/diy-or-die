@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemType: 7
   description: To fix visibility,
-  HealingPartImage: {fileID: 21300000, guid: 5b3a4b303adda944b8aeee11ae2c0715, type: 3}
+  HealingPartImage: {fileID: 21300000, guid: 1d443de194100f54a9c10c9b75ef33ec, type: 3}
   Combination:
   - Type: 9
     Count: 1

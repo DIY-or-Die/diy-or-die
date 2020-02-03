@@ -11,7 +11,7 @@ public class MusicManager : MonoBehaviour
     public Car car;
 
     EventInstance music;
-   
+
     EventInstance birdAmbience;
     EventInstance nightAmbience;
 
@@ -56,7 +56,7 @@ public class MusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
 
 
@@ -64,7 +64,7 @@ public class MusicManager : MonoBehaviour
     {
         Debug.Log("My Car Health");
         Debug.Log(car.CarHealth);
-        if(car.CarHealth >= three4thsHealth)
+        if (car.CarHealth >= three4thsHealth)
         {
             //Debug.Log("Full Health");
             musicDescription.getParameterDescriptionByName("Health", out triggerMusic);
@@ -72,15 +72,15 @@ public class MusicManager : MonoBehaviour
 
             music.setParameterByID(mID, 4.00f);
         }
-        else if(car.CarHealth < three4thsHealth && car.CarHealth >= three4thsHealth)
+        else if (car.CarHealth < three4thsHealth && car.CarHealth >= three4thsHealth)
         {
             //Debug.Log("Dropped 75% Health");
             musicDescription.getParameterDescriptionByName("Health", out ThreeFourthsHp);
             mID = ThreeFourthsHp.id;
 
             music.setParameterByID(mID, 3.00f);
-        } 
-        else if(car.CarHealth < three4thsHealth && car.CarHealth >= halfHealth)
+        }
+        else if (car.CarHealth < three4thsHealth && car.CarHealth >= halfHealth)
         {
             //Debug.Log("Dropped 50% Health");
             musicDescription.getParameterDescriptionByName("Health", out TwoFourthsHP);
@@ -88,7 +88,7 @@ public class MusicManager : MonoBehaviour
 
             music.setParameterByID(mID, 2.00f);
         }
-        else if(car.CarHealth < halfHealth && car.CarHealth >= almostDead)
+        else if (car.CarHealth < halfHealth && car.CarHealth >= almostDead)
         {
             //Debug.Log("Dropped 25% Health");
             musicDescription.getParameterDescriptionByName("Health", out OneFourthHP);
@@ -139,5 +139,5 @@ public class MusicManager : MonoBehaviour
 
     //}
 
- 
+
 }

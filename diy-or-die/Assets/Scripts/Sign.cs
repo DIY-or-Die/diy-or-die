@@ -13,7 +13,7 @@ public class Sign : MonoBehaviour
     private void Start()
     {
         GM = FindObjectOfType<GameManager>();
-        SignUI.SetActive(false);
+        //SignUI.SetActive(false);
         AnimationAvailable = true;     
     }
 
@@ -36,7 +36,7 @@ public class Sign : MonoBehaviour
     public void ResetTrigger()                                                                                                                      
     {
         animator.SetBool("Play", false);
-        SignUI.SetActive(false);
+        //SignUI.SetActive(false);
         AnimationAvailable = true;
     }
 
