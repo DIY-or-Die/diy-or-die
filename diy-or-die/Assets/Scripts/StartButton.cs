@@ -15,6 +15,6 @@ public class StartButton : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("lul"); // TODO: Replace with main scene
+        SceneManager.LoadScene("Avery");
     }
 }
