@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Car : MonoBehaviour
 {
-    public Slider CarHealthSlider;
+    public Dial CarHealthDial;
     public Slider TractionSlider;
     public Slider VisibilitySlider;
     public PartHub[] Hubs;
@@ -116,7 +116,7 @@ private void Start()
 
     private void Update()
     {
-        CarHealth = ModifyHealth(CarHealth, CarHealthSlider, CalculateCarHealthLost());
+        CarHealth = ModifyHealth(CarHealth, CarHealthDial, CalculateCarHealthLost());
         Traction = ModifyHealth(Traction, TractionSlider, CalculateHealthTypeLost(HealthType.Traction, Traction));
         Visibility = ModifyHealth(Visibility, VisibilitySlider, CalculateHealthTypeLost(HealthType.Visibility, Visibility));
         Temperature = ModifyHealth(Temperature, TemperatureSlider, CalculateHealthTypeLost(HealthType.Temperature, Temperature));
@@ -131,6 +131,13 @@ private void Start()
         currentHealth += amount;
         slider.value = currentHealth / 10;
 
+        return currentHealth;
+    }
+
+    private float ModifyHealth(float currentHealth, Dial dial, float amount)
+    {
+        currentHealth += amount;
+        dial.GetComponent<RectTransform>().rotation = Quaternion.Euler(new Vector3(0,0,Mathf.Lerp(130, -130, currentHealth / 10)));
         return currentHealth;
     }
 
