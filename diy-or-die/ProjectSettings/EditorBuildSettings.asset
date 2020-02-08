@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ActualScenes/TitleScreen.unity
     guid: 08146c2d5e2af33469f5c2c7822065dc
   - enabled: 1
-    path: Assets/Scenes/Avery.unity
+    path: Assets/Scenes/ActualScenes/Avery.unity
     guid: a740908ab8b1f0f4fb83d7fdaebe61f8
+  - enabled: 1
+    path: Assets/Scenes/ActualScenes/End_Lose.unity
+    guid: 9bdb56ab9a1585048936e025455944cc
+  - enabled: 1
+    path: Assets/Scenes/ActualScenes/End_Win.unity
+    guid: 48c0a41d6d454d44fbce5635fac4c7fc
   m_configObjects: {}

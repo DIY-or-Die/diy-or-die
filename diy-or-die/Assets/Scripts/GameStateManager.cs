@@ -8,13 +8,15 @@ public class GameStateManager : MonoBehaviour
     public Car car;
     public GameObject GameOverMenu;
     public GameObject BackgroundDim;
+    public Canvas Canvas;
 
     void Update()
     {
         if (car.CarHealth <= 0)
         {
-            GameOverMenu.SetActive(true);
-            BackgroundDim.SetActive(true);
+            Canvas.GetComponent<cs_SceneHandler>().GoToLose();
+            //GameOverMenu.SetActive(true);
+            //BackgroundDim.SetActive(true);
         }
     }
 }
