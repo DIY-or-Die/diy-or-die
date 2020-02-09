@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
-  m_Name: RadiatorRecipie
+  m_Name: SnowTireRecipie
   m_EditorClassIdentifier: 
-  ItemType: 4
-  description: To fix temperature,
-  HealingPartImage: {fileID: 21300000, guid: 1ddb4b8966698ba418c3704bfe0707dd, type: 3}
+  ItemType: 0
+  description: To fix traction,
+  HealingPartImage: {fileID: 21300000, guid: 51f779c0c83638646b284b4266ed9a05, type: 3}
   Combination:
-  - Type: 8
+  - Type: 6
     Count: 1
-  - Type: 10
+  - Type: 9
     Count: 1
-  - Type: 11
+  - Type: 12
     Count: 1
   Color: 1

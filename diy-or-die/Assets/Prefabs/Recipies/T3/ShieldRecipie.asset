@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
-  m_Name: SnowTireRecipie
+  m_Name: ShieldRecipie
   m_EditorClassIdentifier: 
-  ItemType: 0
-  description: To fix traction,
-  HealingPartImage: {fileID: 21300000, guid: 51f779c0c83638646b284b4266ed9a05, type: 3}
+  ItemType: 16
+  description: 
+  HealingPartImage: {fileID: 0}
   Combination:
   - Type: 6
     Count: 1
-  - Type: 9
+  - Type: 0
     Count: 1
-  - Type: 13
+  - Type: 1
     Count: 1
-  Color: 1
+  Color: 2

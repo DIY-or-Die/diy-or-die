@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Collider2D))]
 public class Droppable : MonoBehaviour
 {
-    public SpriteRenderer Renderer { get; private set; }
     public Collider2D DragCollider { get; private set; }
     public DragController DragController { get; private set; }
 
@@ -26,6 +24,7 @@ public class Droppable : MonoBehaviour
     }
     public IRecepticle Recepticle { get; set; }
     public RepairItem RepairItem;
+    public SpriteRenderer Renderer;
     public SpriteRenderer Glow;
 
     public float OriginalPartHealth { get; set; }
@@ -37,7 +36,6 @@ public class Droppable : MonoBehaviour
 
     private void Start()
     {
-        Renderer = GetComponent<SpriteRenderer>();
         DragCollider = GetComponent<Collider2D>();
         DragController = FindObjectOfType<DragController>();
 
@@ -49,6 +47,7 @@ public class Droppable : MonoBehaviour
 
     private void Update()
     {
+
         if (Glow != null)
         {
             Glow.transform.localScale = UnitVector * OriginalScale * (.75f + .5f * Mathf.Abs(Mathf.Sin(Time.time * 3)));
@@ -77,8 +76,9 @@ public class Droppable : MonoBehaviour
         }
         else
         {
-            IdleTimer -= Time.deltaTime;
             Renderer.color = new Color(1, 1, 1, IdleTimer / 10);
+
+            IdleTimer -= Time.deltaTime;
             if (IdleTimer <= 0)
             {
                 Destroy(gameObject);
@@ -89,6 +89,7 @@ public class Droppable : MonoBehaviour
                 transform.Translate(new Vector3(0, -.8f * Time.deltaTime));
             }
         }
+        float shakeAmplifier = 1 - PartHealth / OriginalPartHealth;
         float healthVal = OriginalPartHealth == 0 ? 1 : PartHealth / OriginalPartHealth;
         Renderer.color = new Color(1, healthVal, healthVal, IdleTimer / 10);
         if (Glow != null)

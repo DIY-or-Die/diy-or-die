@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
-  m_Name: GrillRecipie
+  m_Name: SpaceGunRecipie
   m_EditorClassIdentifier: 
-  ItemType: 5
-  description: To fix temperature,
-  HealingPartImage: {fileID: 21300000, guid: 1ddb4b8966698ba418c3704bfe0707dd, type: 3}
+  ItemType: 18
+  description: 
+  HealingPartImage: {fileID: 0}
   Combination:
-  - Type: 8
-    Count: 1
-  - Type: 11
-    Count: 1
-  - Type: 12
-    Count: 1
-  Color: 1
+  - Type: 7
+    Count: 0
+  - Type: 2
+    Count: 0
+  - Type: 3
+    Count: 0
+  Color: 2

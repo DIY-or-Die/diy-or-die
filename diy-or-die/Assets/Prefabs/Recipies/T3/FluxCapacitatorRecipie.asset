@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b2618931fb83d14292337db8002a2c6, type: 3}
-  m_Name: SpeedWiperRecipie
+  m_Name: FluxCapacitatorRecipie
   m_EditorClassIdentifier: 
-  ItemType: 3
-  description: To fix visibility,
-  HealingPartImage: {fileID: 21300000, guid: 1d443de194100f54a9c10c9b75ef33ec, type: 3}
+  ItemType: 17
+  description: 
+  HealingPartImage: {fileID: 0}
   Combination:
-  - Type: 7
+  - Type: 8
     Count: 1
-  - Type: 9
+  - Type: 4
     Count: 1
-  - Type: 14
+  - Type: 5
     Count: 1
-  Color: 1
+  Color: 2
