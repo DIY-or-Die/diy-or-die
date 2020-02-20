@@ -4,6 +4,7 @@ using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class MusicManager : MonoBehaviour
     public Car car;
 
     EventInstance music;
+
+    Bus MasterBus;
 
     EventInstance birdAmbience;
     EventInstance nightAmbience;
@@ -42,6 +45,9 @@ public class MusicManager : MonoBehaviour
 
     void Awake()
     {
+        MasterBus = RuntimeManager.GetBus("Bus:/");
+
+        MasterBus.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         music = RuntimeManager.CreateInstance("event:/Music/Music");
         musicDescription = RuntimeManager.GetEventDescription("event:/Music/Music");
 
@@ -56,7 +62,7 @@ public class MusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
 
