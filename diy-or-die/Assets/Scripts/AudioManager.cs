@@ -94,7 +94,7 @@ public class AudioManager : MonoBehaviour
         //Debug.Log(gameObject);
         float HubY = 150.0f;
         float VisibilityHubX = 60.0f;
-        float TractionHubX = 80.0f;
+        float TractionHubX = 120.0f;
         float TemperatureHubX = 190.0f;
 
         
@@ -105,12 +105,12 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Play Wipers Sound");
             RuntimeManager.PlayOneShot(refillWindShield);
         }
-        else if (Input.mousePosition.x < TractionHubX && Input.mousePosition.y < HubY)
+        else if (Input.mousePosition.x < TractionHubX && Input.mousePosition.x > VisibilityHubX && Input.mousePosition.y < HubY)
         {
             Debug.Log("Play Traction Sound");
             RuntimeManager.PlayOneShot(refillTire);
         }
-        else if (Input.mousePosition.x < TemperatureHubX && Input.mousePosition.y < HubY)
+        else if (Input.mousePosition.x < TemperatureHubX && Input.mousePosition.x > TractionHubX && Input.mousePosition.y < HubY)
         {
             Debug.Log("Play Fluid Sound");
             RuntimeManager.PlayOneShot(refillFluid);
