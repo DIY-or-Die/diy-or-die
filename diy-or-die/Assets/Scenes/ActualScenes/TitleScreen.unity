@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 1683141193}
   - component: {fileID: 1683141195}
   m_Layer: 0
-  m_Name: Background_01 (1)
+  m_Name: TitleBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683141192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a7b2251a0f784637bb5a3d18e125cda, type: 3}
   m_Name: 
@@ -1974,7 +1974,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768758919}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 553767545e519431ba31e0d9fcb564ec, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: e59b8692293f528468c49259163c0814, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1378974233}
