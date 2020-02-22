@@ -6,7 +6,7 @@ Your old patched up car is finally giving out while you're on a road trip. Quick
 
 ## Images
 
-[DIY or Die](https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/91221/diy.png?itok=YHd9LL9R&timestamp=1580691829)
+![DIY or Die](https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/91221/diy.png?itok=YHd9LL9R&timestamp=1580691829)
 
 ## Credits
 
