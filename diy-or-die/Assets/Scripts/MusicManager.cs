@@ -68,8 +68,8 @@ public class MusicManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("My Car Health");
-        Debug.Log(car.CarHealth);
+        //Debug.Log("My Car Health");
+        //Debug.Log(car.CarHealth);
         if (car.CarHealth >= three4thsHealth)
         {
             //Debug.Log("Full Health");

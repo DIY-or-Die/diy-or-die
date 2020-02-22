@@ -24,6 +24,12 @@ public class AudioManager : MonoBehaviour
     string clicking = "event:/SFX/UI/Clicking";
     string dropping = "event:/SFX/UI/Dropping";
 
+    string refillFluid = "event:/SFX/Refill/Heat";
+    string refillTire = "event:/SFX/Refill/Traction";
+    string refillWindShield = "event:/SFX/Refill/Visibility";
+
+    string crafting = "event:/SFX/Craft/Crafting2";
+
     void Awake()
     {
         
@@ -40,9 +46,6 @@ public class AudioManager : MonoBehaviour
 
         carMoving.start();
         
-        //Debug.Log(playState);
-
-
     }
 
     // Update is called once per frame
@@ -76,10 +79,10 @@ public class AudioManager : MonoBehaviour
         //Debug.Log("Clicked on something");
         if (gameObject)
         {
-            Debug.Log("Grabbed item");
+            //Debug.Log("Grabbed item");
             RuntimeManager.PlayOneShot(clicking);
             //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Dropping");
-
+            
 
         }
         //FMODUnity.RuntimeManager.PlayOneShot(clicking);
@@ -87,7 +90,35 @@ public class AudioManager : MonoBehaviour
 
     void OnMouseUp()
     {
-        RuntimeManager.PlayOneShot(dropping);
+        //Debug.Log("Here I am");
+        //Debug.Log(gameObject);
+        float HubY = 150.0f;
+        float VisibilityHubX = 60.0f;
+        float TractionHubX = 80.0f;
+        float TemperatureHubX = 190.0f;
+
+        
+        //Debug.Log(Input.mousePosition.y);
+
+        if(Input.mousePosition.x < VisibilityHubX && Input.mousePosition.y < HubY)
+        {
+            Debug.Log("Play Wipers Sound");
+            RuntimeManager.PlayOneShot(refillWindShield);
+        }
+        else if (Input.mousePosition.x < TractionHubX && Input.mousePosition.y < HubY)
+        {
+            Debug.Log("Play Traction Sound");
+            RuntimeManager.PlayOneShot(refillTire);
+        }
+        else if (Input.mousePosition.x < TemperatureHubX && Input.mousePosition.y < HubY)
+        {
+            Debug.Log("Play Fluid Sound");
+            RuntimeManager.PlayOneShot(refillFluid);
+        }
+        else
+        {
+            RuntimeManager.PlayOneShot(dropping);
+        }
 
     }
 
