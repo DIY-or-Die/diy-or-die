@@ -11,6 +11,7 @@ public class Car : MonoBehaviour
     public Slider TractionSlider;
     public Slider VisibilitySlider;
     public PartHub[] Hubs;
+    public float HealthLossModifier = 1.0f;
 
     internal void AssignItem(Droppable item)
     {
@@ -168,6 +169,6 @@ private void Start()
             numBrokenParts++;
         }
 
-        return numBrokenParts == 0 ? 0 : -Time.deltaTime * .2f * (Mathf.Pow(2, numBrokenParts) / 2 - 1);
+        return numBrokenParts == 0 ? 0 : -Time.deltaTime * numBrokenParts * HealthLossModifier;
     }
 }
