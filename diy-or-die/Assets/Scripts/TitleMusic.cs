@@ -13,9 +13,15 @@ public class TitleMusic : MonoBehaviour
     PARAMETER_DESCRIPTION titleTrigger;
     PARAMETER_ID titleID;
 
+    Bus MasterBus;
+
     // Start is called before the first frame update
     void Start()
     {
+        MasterBus = RuntimeManager.GetBus("Bus:/");
+
+        MasterBus.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
         titleMusic = RuntimeManager.CreateInstance("event:/Music/Title");
         titleDesc = RuntimeManager.GetEventDescription("event:/Music/Title");
 
