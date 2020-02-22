@@ -279,6 +279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubber
       objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: 20ca778469e120c4fb56e40dd434254a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: 20ca778469e120c4fb56e40dd434254a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,6 +352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fluid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: 65ac1b7b4f680c142bf43528ae997210,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: 65ac1b7b4f680c142bf43528ae997210,
         type: 3}
@@ -919,6 +929,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spring
       objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: 7cfa25f2713e5dc44bca5131844e8e9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: 7cfa25f2713e5dc44bca5131844e8e9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1206,6 +1221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plastic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: 592f98dfb135dd5479315c3757aca34f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: 592f98dfb135dd5479315c3757aca34f,
         type: 3}
@@ -1769,6 +1789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: 63e856ece4c243747b42e107ec7fac96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: 63e856ece4c243747b42e107ec7fac96,
         type: 3}
@@ -4179,6 +4204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bolts
       objectReference: {fileID: 0}
+    - target: {fileID: 4955698102668315953, guid: f428e898bdcf9a6439c42264ec217d1c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4955698102668315954, guid: f428e898bdcf9a6439c42264ec217d1c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5616,6 +5646,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1582074561050797624, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1582074561050797626, guid: edfffd3de733c0940893ac4d7a73deb0,
         type: 3}
       propertyPath: m_Convex
@@ -5665,6 +5700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VisbilityHub
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248197914221311672, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7248197914221311674, guid: edfffd3de733c0940893ac4d7a73deb0,
         type: 3}
@@ -5765,6 +5805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006596711286628846, guid: edfffd3de733c0940893ac4d7a73deb0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 318459504420934425, guid: edfffd3de733c0940893ac4d7a73deb0, type: 3}
