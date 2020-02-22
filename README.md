@@ -4,6 +4,8 @@
 
 Your old patched up car is finally giving out while you're on a road trip. Quickly use some spare parts from your car and patch them up while driving! Repair and Craft your way to the nearest pitstop or die stranded in the desert with no help. 
 
+[![DIY or Die](https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/91221/diy.png?itok=YHd9LL9R&timestamp=1580691829)](https://www.youtube.com/watch?v=1_Od8eUzCoU&feature=emb_title)
+
 ## Images
 
 ![DIY or Die](https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/91221/diy.png?itok=YHd9LL9R&timestamp=1580691829)
