@@ -18,6 +18,9 @@ public class ProgressTextController : MonoBehaviour {
     void Update()
     {
         double milesLeft = System.Math.Floor((double) gameManager.WinTimer - gameManager.WinTimeElapsed);
+        if (milesLeft < 0) {
+            milesLeft = 0;
+        }
         progressText.text = "Miles To Safe House: " + milesLeft;
     }
 }

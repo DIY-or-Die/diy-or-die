@@ -4725,6 +4725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PartGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 7432039529056887891, guid: 536502471f0ccdf4b82131329292dd07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7432039529056887917, guid: 536502471f0ccdf4b82131329292dd07,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6972,6 +6977,11 @@ PrefabInstance:
       propertyPath: Car
       value: 
       objectReference: {fileID: 342927694}
+    - target: {fileID: 7432039529056887890, guid: 536502471f0ccdf4b82131329292dd07,
+        type: 3}
+      propertyPath: DropPeriod
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7432039529056887891, guid: 536502471f0ccdf4b82131329292dd07,
         type: 3}
       propertyPath: m_Name
