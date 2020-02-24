@@ -17,6 +17,6 @@ MonoBehaviour:
   HealthValue: 0
   Sprite: {fileID: 21300000, guid: e6a425857bafd430cb5af4a711ce5351, type: 3}
   ItemType: 12
-  TractionValue: 0.5
-  VisibilityValue: 0.25
-  TemperatureValue: 0.25
+  TractionValue: 1
+  VisibilityValue: 0.5
+  TemperatureValue: 0.5
